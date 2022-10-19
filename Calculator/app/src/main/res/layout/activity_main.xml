@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/evText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:hint="enter text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnClick" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="false"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/evText" />
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvZero"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="0"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvDot"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvDot"-->
+    <!--        style="@style/Number2ButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="."-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvAnswer"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvZero" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvAnswer"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:backgroundTint="@color/actionTheme"-->
+    <!--        android:text="="-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_weight="2"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvDot" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvOne"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="1"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvZero"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvTwo"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvTwo"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="2"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvZero"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvThree"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvOne" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvThree"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="3"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvZero"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvMinus"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvTwo" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvMinus"-->
+    <!--        style="@style/ActionButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="-"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvZero"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvThree" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvFour"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="4"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvOne"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvFive"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvFive"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="5"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvOne"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvSix"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvFour" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvSix"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="6"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvOne"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvPlus"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvFive" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvPlus"-->
+    <!--        style="@style/ActionButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="+"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvOne"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvSix" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvSeven"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="7"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvFour"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvEight"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvEight"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="8"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvFour"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvNine"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvSeven" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvNine"-->
+    <!--        style="@style/NumberButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="9"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvFour"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvMultiplication"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvEight" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvMultiplication"-->
+    <!--        style="@style/ActionButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="X"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvFour"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvNine" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvClear"-->
+    <!--        style="@style/ActionButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="AC"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvSeven"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/imgBack"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatImageView-->
+    <!--        android:id="@+id/imgBack"-->
+    <!--        style="@style/ActionButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:scaleType="center"-->
+    <!--        android:src="@drawable/ic_backspace_black"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        android:tint="@color/actionTheme"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvSeven"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvModulo"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvClear" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvModulo"-->
+    <!--        style="@style/ActionButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="%"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvSeven"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/tvDivision"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/imgBack" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvDivision"-->
+    <!--        style="@style/ActionButtonStyle"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:text="/"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvSeven"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_weight="1"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/tvModulo" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvInput"-->
+    <!--        style="@style/TextStyle"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvClear"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:ellipsize="end"-->
+    <!--        tools:text="Input"-->
+    <!--        android:textColor="@android:color/darker_gray"-->
+    <!--        android:layout_marginBottom="@dimen/_20sdp"/>-->
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:id="@+id/tvResult"-->
+    <!--        style="@style/TextStyle"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/tvInput"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:maxLength="10"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        tools:text="Result"-->
+    <!--        android:textColor="@android:color/white"-->
+    <!--        android:layout_marginBottom="@dimen/_5sdp"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
