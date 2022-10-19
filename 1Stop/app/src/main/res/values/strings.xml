@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">1Stop</string>
+
+    <string name="no_instance_found">App instance is not available because app is not running</string>
+    <string name="msg_network_error">Please check your internet connection</string>
+    <string name="msg_server_error">Server not responding. Please try again after some time.</string>
+
+    <!--    Notification related-->
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Events</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+
+    <!--    Welcome screen-->
+    <string name="welcome_line_1">We Provide Peace of Mind</string>
+    <string name="welcome_line_2">The APP where you tell others and they
+        tell you where they are in their Covid-19
+        journey …</string>
+    <string name="share_your">Share your</string>
+    <string name="test_results">Test Results</string>
+    <string name="vaccine_history">Vaccine History</string>
+    <string name="welcome_line_3">Ultra Secure Digital Vault
+        All Labs/Healthcare Companies</string>
+    <string name="get_started">Get started</string>
+
+    <!--    Login screen-->
+    <string name="login">Login</string>
+    <string name="user_name">Username</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="password">Password</string>
+    <string name="your_password">Your password</string>
+    <string name="remember_password">Remember Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or_login_with">OR Login with</string>
+    <string name="dont_have_account">Don’t Have Account?</string>
+    <string name="register">Register</string>
+
+    <!--Register Screen-->
+    <string name="first_name">First name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="suffix">Suffix</string>
+    <string name="enter_your_suffix">Enter your Suffix</string>
+    <string name="address_1">Address 1</string>
+    <string name="enter_your_address">Enter your Address</string>
+    <string name="address_2">Address 2</string>
+    <string name="enter_your_address_line_2">Enter your Address line 2</string>
+    <string name="city">City</string>
+    <string name="your_city">Your City</string>
+    <string name="state">State</string>
+    <string name="your_state">Your State</string>
+    <string name="zip">Zip</string>
+    <string name="area_zip_code">Area Zip code</string>
+    <string name="verify_by_pid">Verify by PID</string>
+
+    <!--Verify Screen-->
+    <string name="please_verify">Please Verify</string>
+    <string name="verify_info">Please Upload your user ID and
+your selfie and OTP so that we can Verify its you.</string>
+    <string name="your_selfie">Your Selfie</string>
+    <string name="camerabrowse">Camera / Browse</string>
+    <string name="user_id">User ID</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="we_sent_on_your_mobile_number">We sent on your mobile number</string>
+    <string name="verify_now">Verify Now</string>
+
+    <!--Dashboard-->
+    <string name="covid_one_step">Covid One Stop</string>
+    <string name="recent_test_results">Recent Test Results</string>
+    <string name="covid19_test_results">Covid-19 Test Result</string>
+    <string name="july272020">July 27, 2020 at 1:04 AM</string>
+    <string name="positive">Positive</string>
+    <string name="negative">Negative</string>
+    <string name="viewall">View All</string>
+    <string name="vaccine">Vaccine</string>
+    <string name="covid19_vaccine">Covid-19 Vaccine</string>
+    <string name="astragenica">Astra Genica</string>
+    <string name="hg1_1234">HG1-1234</string>
+    <string name="poweredby">Powered By</string>
+    <string name="enter_new_test">Enter New Test/Vaccine</string>
+
+    <!--Recent Test Result-->
+
+    <string name="recent_test_result">Recent Test Results</string>
+
+    <!--Vaccine-->
+
+    <!--New Covid19 Test/Vaccine-->
+    <string name="test">Test</string>
+    <string name="date">Date</string>
+    <string name="date7102020">7/10/2020</string>
+    <string name="labvendor">Lab/Vendor</string>
+    <string name="type_any_keyboard">Type any keyword</string>
+    <string name="location">Location</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="personal_id">Personal ID</string>
+    <string name="upload">Upload</string>
+    <string name="self_administered">Self Administered?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="clinician_verified">Clinician Verified?</string>
+    <string name="clinicial">Clinical</string>
+    <string name="clinicial_nam">Clinical Name</string>
+    <string name="enter_clinicial_nam">Enter Clinical Name</string>
+    <string name="id">ID</string>
+    <string name="date_result_received">Date Result Received</string>
+    <string name="result">Result</string>
+    <string name="select_result">Select Result</string>
+    <string name="comments">Comments</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="upload_pdf">Upload PDF</string>
+    <string name="save">SAVE</string>
+
+    <!--Covid Test Details Page-->
+    <string name="date07092020">07-09-2020</string>
+    <string name="ben_martin">Ben Martin</string>
+    <string name="the_clinical_lab">The Clinical Lab</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis, enim tincidunt facilisis maximus, ex sem dapibus erat, et suscipit nisi risus eu nisl. Quisque eu feugiat felis, eget hendrerit ligula.</string>
+
+    <!--Profile Page-->
+    <string name="profile">Profile</string>
+    <string name="enter_your_email_address">Enter your Email Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="covid_one_stop">Covid One Stop</string>
+    <string name="covid_19_test_results">Covid-19 Test Results</string>
+
+</resources>
+

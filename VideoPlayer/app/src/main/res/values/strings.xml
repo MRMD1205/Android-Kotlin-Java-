@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">VideoPlayer</string>
+    <string name="thumbnail_image_view_desc">Youtube Video thumbnail image view</string>
+    <string name="close_player_activity">Close Player activity</string>
+    <string name="title_of_video">Title of Video</string>
+    <string name="_24_33min">24.33min</string>
+    <string name="_24_00">24:00</string>
+
+    <!-- we need to use video ids instead of video link -->
+    <string-array name="video_id_array">
+        <item>a0TkeUhcVrM</item>
+        <item>hoNb6HuNmU0</item>
+        <item>u2A6znC7LIg</item>
+        <item>tLqtnGLfm4Q</item>
+        <item>PVxc5mIHVuQ</item>
+        <item>HtvwcJLqxE0</item>
+        <item>mRmL-fZxVkA</item>
+        <item>p_dtI2bLWhY</item>
+    </string-array>
+
+    <string-array name="video_title_array">
+        <item>Burjkhalifa | Laxmii | Akshay Kumar | Kiara Advani </item>
+        <item>KHAIRIYAT (BONUS TRACK) | CHHICHHORE | Sushant, Shraddha</item>
+        <item>Lambiyaan Si Judaiyaan Full Song | Raabta | Sushant Rajput, Kriti Sanon</item>
+        <item>Tum Hi Aana | Marjaavaan | Riteish D, Sidharth M, Tara S</item>
+        <item>Pachtaoge | Vicky Kaushal, Nora Fatehi |Jaani, B Praak, Arvindr Khaira</item>
+        <item>Thodi Jagah Video | Riteish D, Sidharth M, Tara S | Arijit Singh</item>
+        <item>Akshay Kumar Ft Nupur Sanon | BPraak | Jaani | Arvindr Khaira</item>
+        <item>Mat Aazma Re Full Video|Murder 3|Randeep Hooda|Aditi Rao</item>
+    </string-array>
+
+    <string-array name="video_duration_array">
+        <item>03:25</item>
+        <item>03:59</item>
+        <item>03:37</item>
+        <item>04:27</item>
+        <item>04:30</item>
+        <item>03:58</item>
+        <item>04:15</item>
+        <item>03:58</item>
+    </string-array>
+
+</resources>

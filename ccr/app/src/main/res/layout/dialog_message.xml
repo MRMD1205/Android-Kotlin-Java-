@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_2sdp"
+            app:cardElevation="@dimen/_3sdp"
+            app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        style="@style/CustomTextSmallGreyStyle"
+                        tool:text="@string/str_title" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                        android:padding="@dimen/_16sdp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        style="@style/CustomTextLargeGreyStyle"
+                        android:textSize="@dimen/_16ssp"
+                        tool:text="@string/alert_logout" />
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layoutButtons"
+                        layout="@layout/layout_bottons"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_16sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvMessage"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+</layout>

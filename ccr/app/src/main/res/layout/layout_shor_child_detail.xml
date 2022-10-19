@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.courtesycarsredhill.model.TripdetailData" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layoutButtons"
+                layout="@layout/layout_bottons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStatus"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/tvParentStatus"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orange_rounded_corner_button_bg"
+                android:layout_margin="@dimen/_8sdp"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layoutChildInfo"
+                layout="@layout/layout_child_info" />
+
+            <include
+                android:id="@+id/layoutParentInfo"
+                layout="@layout/item_parent_info" />
+
+            <include
+                android:id="@+id/layoutSchoolInfo"
+                layout="@layout/layout_school_info" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

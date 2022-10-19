@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greyBg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@string/days_of_weeks"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDaysOfWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivMonday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_dark_blue_circle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvMondayValue"
+                    style="@style/StyleDaysOfWeekText"
+                    android:text="@string/m"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@id/ivMonday"
+                    app:layout_constraintEnd_toEndOf="@id/ivMonday"
+                    app:layout_constraintStart_toStartOf="@+id/ivMonday"
+                    app:layout_constraintTop_toTopOf="@id/ivMonday" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivTuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/ic_grey_circle"
+                    app:layout_constraintStart_toEndOf="@+id/ivMonday"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTuesdayValue"
+                    style="@style/StyleDaysOfWeekText"
+                    android:text="@string/t"
+                    android:textColor="@color/grey_80444444"
+                    app:layout_constraintBottom_toBottomOf="@id/ivTuesday"
+                    app:layout_constraintEnd_toEndOf="@id/ivTuesday"
+                    app:layout_constraintStart_toStartOf="@+id/ivTuesday"
+                    app:layout_constraintTop_toTopOf="@id/ivTuesday" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivWednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/ic_dark_blue_circle"
+                    app:layout_constraintStart_toEndOf="@+id/ivTuesday"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvWednesdayValue"
+                    style="@style/StyleDaysOfWeekText"
+                    android:text="@string/w"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@id/ivWednesday"
+                    app:layout_constraintEnd_toEndOf="@id/ivWednesday"
+                    app:layout_constraintStart_toStartOf="@+id/ivWednesday"
+                    app:layout_constraintTop_toTopOf="@id/ivWednesday" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivThursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/ic_dark_blue_circle"
+                    app:layout_constraintStart_toEndOf="@+id/ivWednesday"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvThursdayValue"
+                    style="@style/StyleDaysOfWeekText"
+                    android:text="@string/t"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@id/ivThursday"
+                    app:layout_constraintEnd_toEndOf="@id/ivThursday"
+                    app:layout_constraintStart_toStartOf="@+id/ivThursday"
+                    app:layout_constraintTop_toTopOf="@id/ivThursday" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivFriday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/ic_grey_circle"
+                    app:layout_constraintStart_toEndOf="@+id/ivThursday"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvFridayValue"
+                    style="@style/StyleDaysOfWeekText"
+                    android:text="@string/f"
+                    android:textColor="@color/grey_80444444"
+                    app:layout_constraintBottom_toBottomOf="@id/ivFriday"
+                    app:layout_constraintEnd_toEndOf="@id/ivFriday"
+                    app:layout_constraintStart_toStartOf="@+id/ivFriday"
+                    app:layout_constraintTop_toTopOf="@id/ivFriday" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSaturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/ic_dark_blue_circle"
+                    app:layout_constraintStart_toEndOf="@+id/ivFriday"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSaturdayValue"
+                    style="@style/StyleDaysOfWeekText"
+                    android:text="@string/s"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@id/ivSaturday"
+                    app:layout_constraintEnd_toEndOf="@id/ivSaturday"
+                    app:layout_constraintStart_toStartOf="@+id/ivSaturday"
+                    app:layout_constraintTop_toTopOf="@id/ivSaturday" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/ic_grey_circle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivSaturday"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSundayFridayValue"
+                    style="@style/StyleDaysOfWeekText"
+                    android:text="@string/s"
+                    android:textColor="@color/grey_80444444"
+                    app:layout_constraintBottom_toBottomOf="@id/ivSunday"
+                    app:layout_constraintEnd_toEndOf="@id/ivSunday"
+                    app:layout_constraintStart_toStartOf="@+id/ivSunday"
+                    app:layout_constraintTop_toTopOf="@id/ivSunday" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

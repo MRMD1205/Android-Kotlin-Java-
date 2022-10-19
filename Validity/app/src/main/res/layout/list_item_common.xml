@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_1sdp"
+    app:cardElevation="@dimen/_2sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/txtInfo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15ssp"
+            android:text="txtInfo1" />
+
+        <TextView
+            android:id="@+id/txtInfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15ssp"
+            android:text="txtInfo2" />
+
+        <TextView
+            android:id="@+id/txtInfo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15ssp"
+            android:text="txtInfo3" />
+
+        <TextView
+            android:id="@+id/txtInfo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15ssp"
+            android:text="txtInfo4" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

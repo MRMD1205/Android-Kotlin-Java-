@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExoPlayer2</string>
+    <string name="exo_track_resolution_pixel"><xliff:g id="height" example="768">%1$dp</xliff:g></string>
+    <string name="qualitySelector">Select Quality</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="item"
+            type="com.courtesycarsredhill.model.TripdetailData.Dailyroutestudentmastermodellist"/>
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layoutImgText"
+            layout="@layout/layout_img_text"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:padding="0dp"
+            android:src="@drawable/ic_circle"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvParentName"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvParentName"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@{item.parentName1}"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/ivPhone"
+            app:layout_constraintStart_toEndOf="@+id/layoutImgText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAddress"
+            style="@style/CustomTextSmallGreyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text="@{item.pickupAddress}"
+            android:textColor="@color/grey_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvParentName"
+            app:layout_constraintTop_toBottomOf="@+id/tvParentName" />
+
+        <View
+            android:id="@+id/vw1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/greyBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+        <View
+            android:id="@+id/vw2"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            android:background="@color/greyBg"
+            app:layout_constraintBottom_toTopOf="@+id/vw3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw1" />
+
+        <View
+            android:id="@+id/vw3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/greyBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTimePickup" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTimePickup"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:setTime="@{item.pickUpTime}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPickup"
+            style="@style/CustomTextSmallGreyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:text="@string/str_pickup"
+            app:layout_constraintEnd_toStartOf="@+id/vw2"
+            app:layout_constraintTop_toBottomOf="@+id/vw1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTimeDrop"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:setTime="@{item.dropTime}"
+            app:layout_constraintStart_toEndOf="@+id/vw2"
+            app:layout_constraintTop_toBottomOf="@+id/vw1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDrop"
+            style="@style/CustomTextSmallGreyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:text="@string/str_drop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

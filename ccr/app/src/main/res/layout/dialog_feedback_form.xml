@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMessage"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_16sdp"
+                android:singleLine="false"
+                android:text="@string/feedback"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <RadioGroup
+                android:id="@+id/radioSmiley"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tvMessage">
+
+                <RadioButton
+                    android:id="@+id/rdHappy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/happy_button"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:gravity="bottom|center"
+                    android:text="@string/excellent"
+                    android:textColor="@color/selector_text_black_orange" />
+
+                <RadioButton
+                    android:id="@+id/rdSmile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:background="@android:color/transparent"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/smile_button"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:gravity="bottom|center"
+                    android:text="@string/good"
+                    android:textColor="@color/selector_text_black_orange" />
+
+                <RadioButton
+                    android:id="@+id/rdSad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/sad_button"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:gravity="bottom|center"
+                    android:text="@string/bad"
+                    android:textColor="@color/selector_text_black_orange" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etMessage"
+                style="@style/CustomTextMediumGreyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/shape_rounded_border_gray_edittext"
+                android:gravity="top"
+                android:hint="@string/message"
+                android:lines="5"
+                android:maxLines="4"
+                android:padding="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioSmiley" />
+
+            <include
+                android:id="@+id/layoutButtons"
+                layout="@layout/layout_bottons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etMessage" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

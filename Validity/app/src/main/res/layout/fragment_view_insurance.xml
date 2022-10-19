@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingEnd="@dimen/_16sdp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_efefe9_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_f4f4f4_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Policy Type : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtPolicyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_efefe9_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Policy Number : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtPolicyNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_f4f4f4_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Issue Date : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtIssueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_efefe9_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry Date : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtExpiryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_f4f4f4_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Mode : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtPaymentMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_efefe9_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insurance Amount : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtInsuranceAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_f4f4f4_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Premium : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_efefe9_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agent Name : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtAgentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_f4f4f4_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agent Contact Number : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtAgentContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_efefe9_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dv_marginStart"
+            android:layout_marginTop="@dimen/dv_marginTop"
+            android:layout_marginEnd="@dimen/dv_marginEnd"
+            android:background="@drawable/shape_rounded_f4f4f4_dv_bg"
+            android:elevation="@dimen/dv_elevation"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/dv_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Images : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:itemCount="2"
+                tools:listitem="@layout/list_item_selected_images" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtOk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="OK"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

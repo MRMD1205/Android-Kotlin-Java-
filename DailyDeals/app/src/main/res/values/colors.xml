@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#FBB034</color>
+    <color name="colorPrimaryDark">#FFDD00</color>
+    <color name="colorAccent">#FBB034</color>
+    <color name="colorText">#504F60</color>
+    <color name="themeColor">#FFDD00</color>
+
+    <color name="gradient_start_color">#4f84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
+    <color name="tab_indicator_grey">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_desc_color">#656565</color>
+
+
+    <!-- Themes and style related-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteLite">#fafafa</color>
+    <color name="colorPrimaryShade">#112938</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransperentBlack">#030C12</color>
+    <color name="colorGreen_81AF17">#81AF17</color>
+    <color name="colorTransparent">@android:color/transparent</color>
+
+    <!-- gray-->
+    <color name="colorGray_BBB">#bbbbbb</color>
+    <color name="colorGray_E3">#e3e3e3</color>
+    <color name="grey_300">#DEDEDE</color>
+    <color name="grey_title">#C4CCCA</color>
+    <color name="colorGray_ECEEEF">#ECEEEF</color>
+    <color name="colorGray_777777">#777777</color>
+    <color name="colorGray_B3FFFFFF">#B3FFFFFF</color>
+    <color name="colorGray_1AFFFFFF">#1AFFFFFF</color>
+    <color name="colorGray_E6E6E6">#E6E6E6</color>
+    <color name="colorGray_80FFFFFF">#80FFFFFF</color>
+    <color name="colorGray_59FFFFFF">#59FFFFFF</color>
+
+    <!-- green-->
+    <color name="green_900">#1B5E20</color>
+    <color name="green_700">#388E3C</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_300">#81C784</color>
+    <color name="green_100">#C8E6C9</color>
+    <color name="green_a700">#00C853</color>
+    <color name="green_800">#2E7D32</color>
+
+    <!-- green shade pallet-->
+    <color name="tea_green">#D0F0C0</color>
+    <color name="mint_green">#98FB98</color>
+    <color name="neon_green">#39FF14</color>
+    <color name="torquise_green">#29AB87</color>
+    <color name="lime_green">#c7ea46</color>
+    <color name="dark_green">#0b6623</color>
+
+
+    <color name="dark_blue">#012c5f</color>
+    <color name="green_1">#4fbd36</color>
+    <color name="greenish_blue">#019f6e</color>
+    <color name="blue_007">#00798a</color>
+    <color name="blue_005">#005386</color>
+
+    <color name="red_800">#C62828</color>
+    <color name="peach">#E98555</color>
+    <color name="radio_button_selected_color">#81AF17</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+
+    <!-- Graph color with sequence-->
+    <color name="colorGraph1">#019f6e</color>
+    <color name="colorGraph2">#00798a</color>
+    <color name="colorGraph3">#4fbd36</color>
+    <color name="colorGraph4">#ff7f50</color>
+    <color name="colorGraph5">#c7ea46</color>
+    <color name="colorGraph6">#357acd</color>
+    <color name="colorGraph7">#4dabab</color>
+    <color name="colorGraph8">#7fcd01</color>
+
+</resources>

@@ -1,0 +1,125 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.crashlytics'
+
+repositories {
+    jcenter()
+    mavenCentral()
+
+}
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.courtesycarsredhill"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 5
+        versionName "1.4"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('ccr_keystore.jks')
+            storePassword 'ccr4@li'
+            keyPassword 'ccr4@li'
+            keyAlias = 'ccr'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable false
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+
+ext {
+    supportLibraryVersion = "1.0.0"
+    intuitDimenVersion = "1.0.5"
+    retrofitVersion = "2.4.0"
+    lifecycle_version = "2.0.0"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation "androidx.cardview:cardview:$supportLibraryVersion"
+    implementation "androidx.recyclerview:recyclerview:$supportLibraryVersion"
+
+    // Google Design Library
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.android.material:material:1.3.0-alpha02'
+
+    // JSON response handling library
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    // Library to create Secured SharedPreference
+    implementation 'commons-codec:commons-codec:1.10'
+
+    // Image Loading Library
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+
+    // Retrofit - Network Library
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    //Dimen Library
+    implementation "com.intuit.sdp:sdp-android:$intuitDimenVersion"
+    implementation "com.intuit.ssp:ssp-android:$intuitDimenVersion"
+
+    // firebase-analytics
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+    implementation 'com.google.firebase:firebase-crashlytics:17.1.1'
+
+    //MultiDex Support
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // Google Place APIs
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+
+    // Google Location APIs
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:1.3.1'
+
+    implementation 'com.github.douglasjunior:android-simple-tooltip:0.2.3'
+
+    //for new version updater
+    implementation 'com.google.android.play:core:1.8.3'
+
+    // Slider Button
+    implementation 'com.ebanx:swipe-button:0.8.2'
+
+    // Dexter
+    implementation 'com.karumi:dexter:6.0.2'
+
+    //Image Crop
+    implementation 'com.github.yalantis:ucrop:2.2.6'
+    // Circle image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

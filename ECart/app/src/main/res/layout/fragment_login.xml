@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragment.LoginFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvWelcome"
+            style="@style/AppNameLogoTextViewStyle"
+            android:text="@string/e_cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSlogan"
+            style="@style/AppSloganTextViewStyle"
+            android:text="@string/find_discover_choose_buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/LoginRegisterConstraintBgStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLogin"
+                style="@style/LoginRegisterTypeLogoTextViewStyle"
+                android:text="@string/login"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPhone"
+                style="@style/LoginRegisterMaterialTextInputStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLogin"
+                app:startIconDrawable="@drawable/ic_baseline_phone">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTextPhone"
+                    style="@style/LoginRegisterEditTextStyle"
+                    android:hint="@string/phone"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPassword"
+                style="@style/LoginRegisterMaterialTextInputStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputPhone"
+                app:startIconDrawable="@drawable/ic_baseline_password">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/LoginRegisterEditTextStyle"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forget_password"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/themeColor"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintTop_toBottomOf="@id/textInputPassword"
+                app:layout_constraintEnd_toEndOf="@id/textInputPassword"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:text="@string/login"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvForgotPassword"
+                style="@style/LoginRegisterButtonStyle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAdmin"
+                style="@style/LoginTypeTextViewStyle"
+                android:text="@string/admin"
+                app:layout_constraintEnd_toEndOf="@id/textInputPassword"
+                app:layout_constraintTop_toBottomOf="@id/btnLogin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNotAdmin"
+                style="@style/LoginTypeTextViewStyle"
+                android:text="@string/not_admin"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/textInputPassword"
+                app:layout_constraintTop_toBottomOf="@id/btnLogin"
+                 />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

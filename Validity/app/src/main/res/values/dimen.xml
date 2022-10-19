@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dv_elevation">@dimen/_2sdp</dimen>
+    <dimen name="dv_padding">@dimen/_8sdp</dimen>
+    <dimen name="dv_marginTop">@dimen/_6sdp</dimen>
+    <dimen name="dv_marginStart">@dimen/_1sdp</dimen>
+    <dimen name="dv_marginEnd">@dimen/_1sdp</dimen>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#444444</color>
+    <color name="colorPrimaryDark">#444444</color>
+    <color name="colorAccent">#102C53</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_grey">#cccccc</color>
+    <color name="yellow_ec">#ECFF49</color>
+    <color name="grey_f2f2f2">#F2F2F2</color>
+
+    <color name="grey">#80444444</color>
+    <color name="grey_text">#888888</color>
+
+    <color name="greySecondary">#B5B5B5</color>
+    <color name="grey_80444444">#80444444</color>
+    <color name="greyPrimary">#95989A</color>
+    <color name="greyDark">#4c4c4c</color>
+    <color name="greyBg">#EEEEEE</color>
+    <color name="bgCard">#FAFAFA</color>
+    <color name="grey_box">#DADADA</color>
+
+    <color name="green">#64C573</color>
+    <color name="sky">#4CA9ED</color>
+    <color name="fifty_percent_transperency_orange">#80F67503</color>
+    <color name="blueGrey">#3a6a75</color>
+    <color name="lightGray">#FAFAFA</color>
+    <color name="error_text_color">#dd191d</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#F67503</color>
+    <color name="red_sos">#ff3b30</color>
+    <color name="green_sos">#34c759</color>
+    <color name="Image_background">#FFF1E5</color>
+
+    <color name="grey_bg">#D1D1D6</color>
+    <color name="green_bg">#006400</color>
+    <color name="red_bg">#FF3B30</color>
+    <color name="red_button">#E02A1E</color>
+    <color name="blue_button">#1C2C4F</color>
+
+    <color name="simpletooltip_background">@color/colorAccent</color>
+    <color name="simpletooltip_text">@android:color/white</color>
+    <color name="simpletooltip_arrow">@color/colorAccent</color>
+</resources>

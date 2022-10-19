@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MaterialConcepts</string>
+    <string name="bottom_sheet">Bottom Sheet</string>
+    <string name="first_button">First Button</string>
+    <string name="second_button">Second Button</string>
+    <string name="chnage_image">Chnage Image</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="first_image">First Image</string>
+    <string name="second_image">Second Image</string>
+    <string name="default_image">Default Image</string>
+</resources>

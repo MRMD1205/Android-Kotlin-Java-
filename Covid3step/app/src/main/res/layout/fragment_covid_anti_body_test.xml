@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CovidAntiBodyTestFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewBottom"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgCalenderGreen"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:src="@drawable/ic_calender_green"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDate"
+                style="@style/LoginRegisterTextViewStyle"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:text="@string/date07092020"
+                app:layout_constraintBottom_toBottomOf="@+id/imgCalenderGreen"
+                app:layout_constraintStart_toEndOf="@+id/imgCalenderGreen" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:src="@drawable/ic_red_add"
+                app:layout_constraintBottom_toBottomOf="@+id/tvStatus"
+                app:layout_constraintEnd_toStartOf="@+id/tvStatus"
+                app:layout_constraintTop_toTopOf="@+id/tvStatus" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/positive"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/txtDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtDate" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/ben_martin"
+                android:textColor="#B3000000"
+                android:textSize="@dimen/_22ssp"
+                app:layout_constraintStart_toStartOf="@+id/imgCalenderGreen"
+                app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgPerson"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:src="@drawable/userimage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/tvPersonName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTestPerformedBy"
+                style="@style/CovidTestDetailTextViewStyle"
+                android:text="@string/self_administered"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgPerson" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtClinicalLab"
+                style="@style/LoginRegisterTextViewStyle"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/the_clinical_lab"
+                android:textColor="@color/colorGreen"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtTestPerformedBy" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtComments"
+                style="@style/LoginRegisterTextViewStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/comments"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtClinicalLab" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtInsideComments"
+                style="@style/LoginRegisterTextViewStyle"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/lorem"
+                android:textColor="@color/colorGrayText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtComments" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSafe4"
+                style="@style/Safe4ImageViewStyle"
+                android:src="@drawable/img_welcome_safe_4"
+                app:layout_constraintStart_toStartOf="@+id/txtInsideComments"
+                app:layout_constraintTop_toBottomOf="@+id/txtInsideComments" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:src="@drawable/ic_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgScan"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:src="@drawable/ic_scan"
+            app:layout_constraintEnd_toStartOf="@+id/imgPrint"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPrint"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:src="@drawable/ic_print"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

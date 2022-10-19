@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">E-Cart</string>
+    <string name="online_shopping">Online Shopping</string>
+    <string name="welcome">Welcome</string>
+    <string name="find_discover_choose_buy">Find | Discover | Choose | Buy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="don_t_have_an_account_register">Don`t have an account? Register</string>
+    <string name="login">Login</string>
+    <string name="e_cart">E-Cart</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="admin">Admin ?</string>
+    <string name="not_admin">Not Admin ?</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password_note">Note : Password should be of Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character.</string>
+    <string name="logout">LogOut</string>
+    <string name="login_admin">Login Admin</string>
+    <string name="logout_admin">Logout Admin</string>
+    <string name="item_category">Item Category</string>
+</resources>

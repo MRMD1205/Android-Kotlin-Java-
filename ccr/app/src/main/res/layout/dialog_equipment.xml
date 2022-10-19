@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMessage"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_16sdp"
+                android:singleLine="false"
+                android:text="@string/equipment_detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tool:listitem="@layout/item_equipment_question"
+                app:layout_constraintTop_toBottomOf="@+id/tvMessage" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etComment"
+                app:layout_constraintStart_toStartOf="@+id/layoutButtons"
+                app:layout_constraintEnd_toEndOf="@+id/layoutButtons"
+                app:layout_constraintBottom_toTopOf="@+id/layoutButtons"
+                app:layout_constraintTop_toBottomOf="@+id/rvQuestions"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:padding="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lines="3"
+                android:gravity="top|start"
+                android:hint="@string/enter_your_comment_here"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/layoutButtons"
+                layout="@layout/layout_bottons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etComment" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

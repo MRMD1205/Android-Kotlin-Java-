@@ -1,0 +1,240 @@
+<resources>
+
+    <string name="app_name">CCR</string>
+
+    <!--Common Strings-->
+    <string name="no_valid_url_available">No valid url available</string>
+    <string name="something_went_wrong">Something went wrong .PLease try again later.</string>
+    <string name="loading">Loading...</string>
+    <string name="please_grant_permission">Please grant permission</string>
+    <string name="failed_to_connect_with_server">Failed to connect with server!</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="str_title">Title</string>
+    <string name="child_name">Child Name</string>
+    <string name="parent_name">Parent Name</string>
+    <string name="address">Address</string>
+    <string name="email">Email Address</string>
+    <string name="str_name">Name</string>
+    <string name="str_school_name">School Name</string>
+    <string name="message">Message</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="alert_back">Please click BACK TWICE to exit</string>
+    <string name="restart">Please Restart Your App Again</string>
+    <string name="update_downloaded">Updating the App</string>
+    <string name="sending_notification">Sending Notification</string>
+    <string name="notification_sent">SOS sent successfully</string>
+    <string name="dummy_date">YYYY-MM-DD</string> <string name="source_location">Source Location</string>
+    <string name="destination_location">Destination Location</string>
+    <string name="dummy_date_1">23/10/2020</string>
+    <string name="comments">Comments</string>
+
+
+    <!--Button Strings-->
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+    <string name="str_accept">Accept</string>
+    <string name="str_decline">Decline</string>
+    <string name="share_via">Share Via</string>
+    <string name="pickup">Pickup</string>
+    <string name="absent">Absent</string>
+    <string name="completed">Completed</string>
+    <string name="take_a_picture">Take A Picture</string>
+
+    <!--Login Screen-->
+    <string name="user_name">User Name</string>
+    <string name="pin">Enter 4 digit pin</string>
+    <string name="sign_in">Sign In</string>
+    <string name="str_call_office">Call to office</string>
+
+    <!-- validation-->
+    <string name="validate_username">Please enter user name</string>
+    <string name="validate_pin">Please enter 4 digits login pin</string>
+    <string name="you_must_enter_4_digit_pin">You must enter 4 digit for login pin</string>
+    <string name="submit">Submit</string>
+
+    <!--Navigation Drawer-->
+    <string name="str_sign_out">Sign Out</string>
+    <string name="str_terms_n_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="str_about_us">About Us</string>
+    <string name="str_notification">Notification</string>
+    <string name="str_history">History</string>
+    <string name="str_upcoming_trip">Upcoming Trips</string>
+    <string name="str_home">Home</string>
+    <string name="version_1_0_0">"Version "</string>
+
+    <!--Trip detail and list String-->
+    <string name="trip_code">Trip Code</string>
+    <string name="no_trip_available">No trip available.</string>
+    <string name="trip">Trip</string>
+    <string name="str_swipe_to_start">Start trip</string>
+    <string name="str_give_trip_feedback">Give Trip Feedback</string>
+    <string name="str_children">Children</string>
+    <string name="str_child_info">Child Info</string>
+    <string name="str_birthdate">Birthdate</string>
+    <string name="str_euipment">Equipment</string>
+    <string name="str_euipment_colon">"Equipment: "</string>
+    <string name="str_note">Note</string>
+    <string name="str_school">School</string>
+    <string name="str_school_timing">School Timings</string>
+    <string name="str_parent">Parents</string>
+    <string name="str_primary_contact">Primary Contact</string>
+    <string name="str_secondary_contact">Secondary Contact</string>
+    <string name="str_relation">Relation</string>
+    <string name="departure">Departure</string>
+    <string name="str_monthly_earning">Monthly Earnings</string>
+    <string name="str_today_earning">Today\'s Earnings</string>
+    <string name="str_driver">Driver</string>
+    <string name="str_escort">Passenger Assistant</string>
+    <string name="child_address">Child Address</string>
+    <string name="parent_guardian_name">Parent /Guardian Name</string>
+    <string name="navigation">Navigation</string>
+    <string name="str_earning">Earnings</string>
+    <string name="str_earn">Earned </string>
+    <string name="google_directions_key">AIzaSyAyXEHQM1ubBfzG3ZvsrOGxFGukQE5uEgg</string>
+
+    <string name="select_month">Select Month</string>
+    <string name="str_absent_title">Reason for absent?</string>
+
+
+    <!--    Dialog Alert message-->
+    <string name="alert_logout">Are you confirmed to \nsign out?</string>
+    <string name="alert_end_trip">Are you sure you want to end trip?</string>
+    <string name="alert_location_is_off">Unable to get your location. Please switch on your location.</string>
+    <string name="filter">Filter</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="from_gallery">Choose from Gallery</string>
+    <string name="update_required">Update Required</string>
+    <string name="update_app_desc">A new version of the application is available. Please update to latest version to continue using App</string>
+    <string name="update">Update</string>
+    <string name="close_app">Close App</string>
+    <string name="note">Note</string>
+    <string name="note_desc_1">Make sure documents is not creased and laid out flat</string>
+    <string name="note_desc_2">Take picture from birds eye view keeping the document within boundaries in the camera</string>
+    <string name="alert_sos">Swipe Right on Emergency</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="ok">OK</string>
+
+    <!--student list-->
+    <string name="parent1">Parent 1 - </string>
+    <string name="parent2">Parent 2 - </string>
+    <string name="emergency_contect_">Emergency Contact number - </string>
+
+
+    <!--temp-->
+    <string name="tem_name">Paul P. Grave</string>
+    <string name="tem_number">9999999999</string>
+    <string name="temp_email">test@gmail.com</string>
+    <string name="temp_father">Father</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_reset_password">Please enter your register email address we will send reset password link to your email</string>
+    <string name="str_go_signiin"><u>Go back to Sign in</u></string>
+    <string name="str_drop">Drop</string>
+    <string name="str_pickup">Pickup</string>
+    <string name="str_currency">£</string>
+    <string name="end_trip">End trip</string>
+    <string name="emergency_contect">Emergency Contact number  </string>
+    <string name="image_upload">Image Upload</string>
+    <string name="pdf_upload">Pdf Upload</string>
+    <string name="img_intent_null">Image Intent Null</string>
+
+    <string name="str_status">Change Student Status</string>
+    <string name="str_call_driver">Call driver</string>
+    <string name="str_you_are_here">You are here</string>
+
+    // Call detail screen
+    <string name="call_detail">Call Detail</string>
+    <string name="office">Office</string>
+    <string name="office_number">01737 306006</string>
+    <string name="ghazala_operations">Ghazala (Operations)</string>
+    <string name="ghajala_number">07941 207198</string>
+    <string name="aster_training_inspection">Training</string>
+    <string name="document_number">07941 207194</string>
+    <string name="workshop_number">07847 210502</string>
+    <string name="Ali_number">07740 404219</string>
+    <string name="ali">Ali</string>
+    <string name="rubia_documents_applications">Rubia (documents/applications)</string>
+    <string name="workshop">Workshop</string>
+    <string name="feedback">Feedback</string>
+    <string name="save">Save</string>
+    <string name="no_contacts_available">No contacts available.</string>
+    <string name="login_successful">Login Successful</string>
+
+    //Equipment dilaog
+    <string name="checklist_success_message">Checklist save successfully</string>
+    <string name="equipment_detail">Equipment Checklist</string>
+    <string name="aler_emplty_equipment">Please confirm all equipment checked.</string>
+    <string name="alert_message">Please enter message</string>
+
+    <!--Map String-->
+    <string name="arrive">Arrive</string>
+    <string name="drop_message">Student has been dropped</string>
+    <string name="parent_drop_message">Student has been dropped by Parent</string>
+    <string name="absent_message">Student is absent</string>
+    <string name="pickup_message">Student has been picked up</string>
+    <string name="parent_pickup_message">Student has been picked up by Parent</string>
+    <string name="parent_pickup">Parent Pickup</string>
+    <string name="parent_drop">Parent Drop</string>
+
+    <string name="label_start_trip">Trip is not started yet.</string>
+    <string name="label_Complete_trip">Trip is completed.</string>
+    <string name="absent_alert">Please give reason of absent</string>
+    <string name="no_equipment">No equipment required</string>
+
+    <string name="go_to_setting">Go to Settings</string>
+    <string name="location_permission_desc">CCR requires your permission to get real time location. Please go to settings and allow location permission.</string>
+    <string name="enter_your_comment_here">Any problems, please state here</string>
+    <string name="excellent">Excellent</string>
+    <string name="good">Good</string>
+    <string name="bad">Bad</string>
+    <string name="issue">Issue</string>
+
+    <!--Document Section-->
+    <string name="upload_your_doc">Upload your documents</string>
+    <string name="str_what_you_want_to_upload">What you want to Upload?</string>
+    <string name="str_image">IMAGE</string>
+    <string name="str_pdf">PDF</string>
+    <string name="select_expiry_date">Select Expiry Date</string>
+    <string name="upload_now">Upload Now</string>
+    <string name="new_upload_pdf">New Upload Pdf</string>
+    <string name="new_upload_Image">New Upload Image</string>
+    <string name="go_to_home">Go to Home</string>
+    <string name="uploaded_successfully">Uploaded Successfully</string>
+    <string name="title_is_empty_validation">Please Select Title</string>
+    <string name="expiry_date_is_empty_validation">Please Enter Expiry Date</string>
+
+    <!--New Job Offer Section-->
+    <string name="route_name">Route Name</string>
+    <string name="am_trips">AM Trips</string>
+    <string name="pm_trips">PM Trips</string>
+    <string name="to">To</string>
+    <string name="amount">Amount</string>
+    <string name="per_day">/ Day</string>
+    <string name="dummy_amt">£10</string>
+    <string name="days_of_weeks">Days of week</string>
+    <string name="m">M</string>
+    <string name="t">T</string>
+    <string name="w">W</string>
+    <string name="f">F</string>
+    <string name="s">S</string>
+    <string name="pickup_address">Pickup Addresses</string>
+    <string name="dummy_pickup_address">85 Long Street, MILOVAIG, IV55 4UR </string>
+    <string name="accept">ACCEPT</string>
+    <string name="reject">REJECT</string>
+
+    <!--Feedback -->
+    <string name="how_was_your_exp">How was your experience? </string>
+    <string name="question_1">Question 1</string>
+    <string name="question_2">Question 2</string>
+    <string name="question_3">Question 3</string>
+    <string name="feedbacks">Feedbacks</string>
+
+    <!--SOS -->
+    <string name="sos">SOS</string>
+    <string name="document_name">Document Name</string>
+    <string name="expiry_date">Expiry Date</string>
+</resources>

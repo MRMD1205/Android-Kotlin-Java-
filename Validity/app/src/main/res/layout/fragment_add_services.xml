@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingEnd="@dimen/_16sdp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/txtServiceDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Select Date"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service Type : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <!--   todo     remove it-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:visibility="gone">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_marginTop="@dimen/_6sdp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--                <CheckBox-->
+        <!--                    android:id="@+id/chkBody"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="Body" />-->
+
+        <!--                <CheckBox-->
+        <!--                    android:id="@+id/chkBreak"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="Break" />-->
+
+        <!--            </LinearLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_marginTop="@dimen/_6sdp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--                <CheckBox-->
+        <!--                    android:id="@+id/chkCluth"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="Cluth" />-->
+
+        <!--                <CheckBox-->
+        <!--                    android:id="@+id/chkCoolingSystem"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="Cooling System" />-->
+        <!--            </LinearLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_marginTop="@dimen/_6sdp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--                <CheckBox-->
+        <!--                    android:id="@+id/chkEngine"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="Engine" />-->
+
+        <!--                <CheckBox-->
+        <!--                    android:id="@+id/chkSparkPlug"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="Spark Plug" />-->
+        <!--            </LinearLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_marginTop="@dimen/_6sdp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--                <CheckBox-->
+        <!--                    android:id="@+id/chkGeneral"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="General" />-->
+
+        <!--                <CheckBox-->
+        <!--                    android:id="@+id/chkOther"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="Other" />-->
+        <!--            </LinearLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_marginTop="@dimen/_6sdp"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--                <CheckBox-->
+        <!--                    android:id="@+id/chkOilChange"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="Oil Change" />-->
+
+        <!--                <CheckBox-->
+        <!--                    android:id="@+id/chkBattery"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:text="Battery" />-->
+        <!--            </LinearLayout>-->
+        <!--        </LinearLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvServicesType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/list_item_service_type" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etGarage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:hint="Garage"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15ssp"
+            app:met_errorColor="#DA1616"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Garage" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etContactNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:digits="0123456789"
+            android:hint="Contact No"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15ssp"
+            app:met_errorColor="#DA1616"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Contact No" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etTotalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:digits="0123456789"
+            android:hint="Total Amount"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15ssp"
+            app:met_errorColor="#DA1616"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Total Amount" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etKmReading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:digits="0123456789"
+            android:hint="Km Reading"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15ssp"
+            app:met_errorColor="#DA1616"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Km Reading" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:hint="Description"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15ssp"
+            app:met_errorColor="#DA1616"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Image : "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSelectedImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_square_border_cornered_gray"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_place_holder"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtSelectImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/shape_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Add Image"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVehicalImages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_square_border_cornered_gray"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:itemCount="2"
+                tools:listitem="@layout/list_item_selected_images" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="ADD"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/txtCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Cancel"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

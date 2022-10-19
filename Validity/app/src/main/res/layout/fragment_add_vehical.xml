@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_8sdp"
+    android:scrollbars="none"
+    tools:context=".fragment.AddVehicalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Condition : "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spVehicleCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overlapAnchor="false"
+                android:padding="10dp" />
+        </LinearLayout>
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_medium" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Type : "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spVehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:overlapAnchor="false"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_medium" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Brand : "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spVehicleBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:overlapAnchor="false"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_medium" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Model name"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etModelName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Model name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp"
+                app:met_errorColor="#DA1616"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Model name" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_medium" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Owner name"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etOwnerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Owner name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp"
+                app:met_errorColor="#DA1616"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Owner name" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_medium" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build year"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etBuildYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Build year"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp"
+                app:met_errorColor="#DA1616"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Build year" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_medium" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registration number"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etRegistrationNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Registration number"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp"
+                app:met_errorColor="#DA1616"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Registration number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuel Type : "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spFuelType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:overlapAnchor="false"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_medium" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tank Capacity (Litre)"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etTankCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tank Capacity (Litre)"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp"
+                app:met_errorColor="#DA1616"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Tank Capacity (Litre)" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_medium" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase Date : "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtPurchaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Select purchase date"
+                android:padding="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_medium" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Purchase Price"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etPurchasePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Purchase Price"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp"
+                app:met_errorColor="#DA1616"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Purchase Price" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/gray_medium" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Km Reading"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etKmReading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Km Reading"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15ssp"
+                app:met_errorColor="#DA1616"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Km Reading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSelectImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/shape_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Add Image"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Image : "
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgVehical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_square_border_cornered_gray"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_place_holder"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVehicalImages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_square_border_cornered_gray"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:listitem="@layout/list_item_selected_images" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="ADD"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/txtCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_btn_bg"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Cancel"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

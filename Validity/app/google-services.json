@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "905914813876",
+    "firebase_url": "https://validityapp-1583578198335.firebaseio.com",
+    "project_id": "validityapp-1583578198335",
+    "storage_bucket": "validityapp-1583578198335.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905914813876:android:5c957aed4310dc267e36e1",
+        "android_client_info": {
+          "package_name": "com.app.validity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905914813876-2mavok9glosdcq2d2fsoj7q700kgbfiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHGZtE_A7KlNUAo8a94pDxdIStAMVe-n0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905914813876-2mavok9glosdcq2d2fsoj7q700kgbfiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

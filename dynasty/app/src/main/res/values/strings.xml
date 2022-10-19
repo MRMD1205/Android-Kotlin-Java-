@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Dynasty</string>
+    <string name="app_name_toolbar">DYNASTY</string>
+    <string name="no_instance_found">No instance found</string>
+    <string name="no_internet_dialog">Slow or no internet connection. \n Please check your internet settings</string>
+    <string name="try_again">Try Again</string>
+
+    <!--    Notification related-->
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Events</string>
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="msg_network_error">Please check your internet connection</string>
+    <string name="msg_server_error">Server not responding. Please try again after some time.</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="failed_to_connect_with_server">Failed to connect with server!</string>
+    <string name="something_went_wrong">Oh no, something went wrong!</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="search_categories">Search for Categories</string>
+    <string name="search_businesses">Search for Businesses</string>
+
+    <!-- Business details Screen-->
+    <string name="dummy_category_name">Agriculture</string>
+    <string name="dummy_company_name">JK Agri Genetics Ltd</string>
+    <string name="dummy_company_address">34, New Street, New York</string>
+    <string name="dummy_address">Street one, New York</string>
+    <string name="dummy_company_mail_id">jk@gmail.com</string>
+    <string name="dummy_company_mobile_no">9876543210</string>
+    <string name="contacts">contacts</string>
+    <string name="about_us">about us</string>
+    <string name="services">services</string>
+    <string name="tags">tags</string>
+    <string name="services_1">seeds</string>
+    <string name="services_1_dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue ipsum, laoreet vitae dictum at, sodales dictum tellus. Cras ac odio vehicula tortor pretium sodales.</string>
+    <string name="services_2">farming tools</string>
+    <string name="about_us_dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue ipsum, laoreet vitae dictum at, sodales dictum tellus. Cras ac odio vehicula tortor pretium sodales.
+Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Fusce augue ipsum, laoreet vitae dictum at, sodales dictum tellus. Cras ac odio vehicula tortor pretium sodales.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue ipsum, laoreeLorem ipsum dolor sit amet, consectetur adipiscing elit. adipiscing elit. </string>
+
+
+    <!-- Business Listing Screen-->
+    <string name="business">Businesses</string>
+    <string name="no_records_found">No Records Found</string>
+
+
+    <!-- Business Filter Screen-->
+    <string name="filters">Filters</string>
+    <string name="clear_all">Clear All</string>
+    <string name="_1_mi">1 mi.</string>
+    <string name="_2_mi">2 mi.</string>
+    <string name="_5_mi">5 mi.</string>
+    <string name="select_location_radius">Select Location Radius</string>
+    <string name="filter_by_categories">Filter By Categories</string>
+    <string name="filter_by_tags">Filter By Tags</string>
+    <string name="apply">Apply</string>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivUploadDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_image_upload_"
+            android:scaleType="center"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUploadDocTitle"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_margin="@dimen/_12sdp"
+            android:gravity="center"
+            android:text="@string/upload_your_doc"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="@+id/ivUploadDocument"
+            app:layout_constraintStart_toStartOf="@+id/ivUploadDocument"
+            app:layout_constraintTop_toBottomOf="@+id/ivUploadDocument" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvWhichDocTitle"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_12sdp"
+            android:text="@string/str_what_you_want_to_upload"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUploadDocTitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivFrameImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_18sdp"
+            android:background="@drawable/rectangle_grey_frame"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivFramePdf"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivFramePdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_18sdp"
+            android:background="@drawable/rectangle_grey_frame"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/ivFrameImage" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btUploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_box_file_image"
+            app:layout_constraintBottom_toTopOf="@+id/tvImage"
+            app:layout_constraintEnd_toEndOf="@+id/ivFrameImage"
+            app:layout_constraintStart_toStartOf="@+id/ivFrameImage"
+            app:layout_constraintTop_toTopOf="@id/ivFrameImage"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/str_image"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/ivFrameImage"
+            app:layout_constraintEnd_toEndOf="@+id/btUploadImage"
+            app:layout_constraintStart_toStartOf="@+id/btUploadImage"
+            app:layout_constraintTop_toBottomOf="@+id/btUploadImage" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btUploadPdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_box_file_pdf"
+            app:layout_constraintBottom_toTopOf="@+id/tvPdf"
+            app:layout_constraintEnd_toEndOf="@+id/ivFramePdf"
+            app:layout_constraintStart_toStartOf="@+id/ivFramePdf"
+            app:layout_constraintTop_toTopOf="@id/ivFramePdf"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="@string/str_pdf"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/ivFramePdf"
+            app:layout_constraintEnd_toEndOf="@+id/btUploadPdf"
+            app:layout_constraintStart_toStartOf="@+id/btUploadPdf"
+            app:layout_constraintTop_toBottomOf="@+id/btUploadPdf" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

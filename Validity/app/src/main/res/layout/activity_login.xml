@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingEnd="@dimen/_16sdp"
+    tools:context=".activity.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/_56sdp"
+        android:layout_height="@dimen/_56sdp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:text="Email"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter email"
+        android:importantForAutofill="yes"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        app:met_errorColor="#DA1616"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Enter email" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Password"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="Enter password"
+        android:importantForAutofill="yes"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBtnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        app:met_errorColor="#DA1616"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Enter password" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtBtnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/shape_btn_bg"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="Login"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBtnLoginWithGoogle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/shape_btn_bg"
+        app:layout_constraintEnd_toEndOf="@+id/txtBtnLogin"
+        app:layout_constraintStart_toStartOf="@+id/txtBtnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtBtnLogin">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_google_plus"
+            app:layout_constraintBottom_toBottomOf="@+id/txtBtnLoginWithGoogle"
+            app:layout_constraintEnd_toStartOf="@+id/txtBtnLoginWithGoogle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtBtnLoginWithGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="Login with Google"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signInButton"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBtnLogin" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="Don't have account ? Sign Up"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

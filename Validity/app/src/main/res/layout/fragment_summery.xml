@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragment.vehicaltools.SummeryFragment">
+
+        <CheckBox
+            android:id="@+id/chkAddPurchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/shape_rounded_f4f4f4_bg"
+            android:elevation="@dimen/_2sdp"
+            android:layoutDirection="rtl"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="Include Purchase Price "
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clTotalExpenditure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/shape_rounded_f4f4f4_bg"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@+id/chkAddPurchase">
+
+            <TextView
+                android:id="@+id/txtTotalExpenditureTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:text="Total Expenditure"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtTotalExpenditureValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="35000"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTotalExpenditureTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPurchaseProice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/shape_rounded_efefe9_bg"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@+id/clTotalExpenditure"
+            tools:layout_editor_absoluteX="21dp">
+
+            <TextView
+                android:id="@+id/txtPurchaseProiceTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="Purchase Price"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toStartOf="@+id/txtPurchaseProiceValue"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPurchaseProiceValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="@dimen/_8sdp"
+                android:text="35000"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtPurchaseProiceTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clRefuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/shape_rounded_f4f4f4_bg"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@+id/clPurchaseProice"
+            tools:layout_editor_absoluteX="21dp">
+
+            <TextView
+                android:id="@+id/txtRefuelTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="Refuel"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toStartOf="@+id/txtRefuelValue"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtRefuelValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="@dimen/_8sdp"
+                android:text="35000"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtRefuelTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/shape_rounded_efefe9_bg"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@+id/clRefuel"
+            tools:layout_editor_absoluteX="21dp">
+
+            <TextView
+                android:id="@+id/txtServiceTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="Service"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toStartOf="@+id/txtServiceValue"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtServiceValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="@dimen/_8sdp"
+                android:text="35000"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtServiceTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/shape_rounded_f4f4f4_bg"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@+id/clService">
+
+            <TextView
+                android:id="@+id/txtExpenseTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="Expense"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toStartOf="@+id/txtExpenseValue"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtExpenseValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="@dimen/_8sdp"
+                android:text="35000"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtExpenseTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clInsurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/shape_rounded_efefe9_bg"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@+id/clExpense">
+
+            <TextView
+                android:id="@+id/txtInsuranceTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="Insurance"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toStartOf="@+id/txtInsuranceValue"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtInsuranceValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="@dimen/_8sdp"
+                android:text="35000"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtInsuranceTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPermit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/shape_rounded_f4f4f4_bg"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@+id/clInsurance">
+
+            <TextView
+                android:id="@+id/txtPermitTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="Permit"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toStartOf="@+id/txtPermitValue"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPermitValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="@dimen/_8sdp"
+                android:text="35000"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtPermitTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPUC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/shape_rounded_efefe9_bg"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@+id/clPermit">
+
+            <TextView
+                android:id="@+id/txtPUCTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="PUC"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toStartOf="@+id/txtPUCValue"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPUCValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="@dimen/_8sdp"
+                android:text="35000"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/txtPUCTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

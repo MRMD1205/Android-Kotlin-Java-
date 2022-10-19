@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".fragment.RegisterFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDailyDeals"
+            style="@style/DailyDealsLogoTextStyle"
+            android:text="@string/daily_deals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSlogan"
+            style="@style/SloganTextStyle"
+            android:text="@string/find_discover_buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDailyDeals" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:src="@drawable/ic_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSlogan" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivTakePhoto"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:src="@drawable/ic_take_photo"
+            app:layout_constraintBottom_toBottomOf="@+id/ivProfile"
+            app:layout_constraintEnd_toEndOf="@+id/ivProfile" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/evUserName"
+            style="@style/LoginRegisterEditTextStyle"
+            android:drawableStart="@drawable/ic_baseline_person"
+            android:hint="@string/username"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivProfile" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/evPhone"
+            style="@style/LoginRegisterEditTextStyle"
+            android:drawableStart="@drawable/ic_baseline_phone"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evUserName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/evEmail"
+            style="@style/LoginRegisterEditTextStyle"
+            android:drawableStart="@drawable/ic_baseline_email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evPhone" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/evPassword"
+            style="@style/LoginRegisterEditTextStyle"
+            android:drawableStart="@drawable/ic_baseline_lock"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evEmail" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnSignUp"
+            style="@style/LoginRegisterButtonStyle"
+            android:src="@drawable/ic_login_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evPassword" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSignUp"
+            style="@style/LoginRegisterButtonTextStyle"
+            android:text="@string/sign_up"
+            app:layout_constraintBottom_toBottomOf="@id/btnSignUp"
+            app:layout_constraintEnd_toStartOf="@+id/btnSignUp"
+            app:layout_constraintTop_toTopOf="@id/btnSignUp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSignInAccount"
+            style="@style/SignInSignUpTextViewStyle"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/already_have_an_account_signin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSignUp" />
+
+        <ProgressBar
+            android:id="@+id/registerProgressBar"
+            style="@style/ProgressBar"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/btnSignUp"
+            app:layout_constraintEnd_toEndOf="@id/btnSignUp"
+            app:layout_constraintStart_toStartOf="@id/btnSignUp"
+            app:layout_constraintTop_toTopOf="@id/btnSignUp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

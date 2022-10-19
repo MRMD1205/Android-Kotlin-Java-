@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/slide_bg_red" />
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="@color/green_sos" />
+                <stroke
+                    android:width="@dimen/_44sdp"
+                    android:color="@color/green_sos" />
+                <corners
+                    android:bottomLeftRadius="@dimen/_6sdp"
+                    android:bottomRightRadius="@dimen/_6sdp"
+                    android:topLeftRadius="@dimen/_6sdp"
+                    android:topRightRadius="@dimen/_6sdp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="@color/white"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sky"
+                android:padding="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRouteName"
+                    style="@style/CustomTextSmallGreyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/route_name"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvRouteCodeValue"
+                    style="@style/CustomTextLargeGreyStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRouteName"
+                    tools:text="RT009" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTripDate"
+                    style="@style/CustomTextMediumGreyStyle"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRouteName"
+                    tools:text="22/10/2020" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_user_image"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:background="@drawable/shape_circle_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clHeader" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSchoolName"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/iv_user_image"
+                app:layout_constraintTop_toTopOf="@+id/iv_user_image"
+                tools:text="Sharda School" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSchoolAddress"
+                style="@style/CustomTextSmallGreyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:maxLines="3"
+                android:singleLine="false"
+                android:textColor="@color/grey_text"
+                app:layout_constraintStart_toEndOf="@+id/iv_user_image"
+                app:layout_constraintTop_toBottomOf="@+id/tvSchoolName"
+                tools:text="School Address" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAmTripsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/am_trips"
+                android:textColor="@color/sky"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_user_image" />
+
+            <include
+                android:id="@+id/layoutAmSourceTime"
+                layout="@layout/layout_small_time_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvAmTripsTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvAmTripsTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvAmTripsTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvToTitle"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:text="@string/to"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/layoutAmSourceTime"
+                app:layout_constraintStart_toEndOf="@+id/layoutAmSourceTime"
+                app:layout_constraintTop_toTopOf="@+id/layoutAmSourceTime" />
+
+            <include
+                android:id="@+id/layoutAmDestinationTime"
+                layout="@layout/layout_small_time_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvAmTripsTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvToTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvAmTripsTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPmTripsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/pm_trips"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAmTripsTitle" />
+
+            <include
+                android:id="@+id/layoutPmSourceTime"
+                layout="@layout/layout_small_time_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPmTripsTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvPmTripsTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvPmTripsTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvToTitle1"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:text="@string/to"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/layoutPmSourceTime"
+                app:layout_constraintStart_toEndOf="@+id/layoutPmSourceTime"
+                app:layout_constraintTop_toTopOf="@+id/layoutPmSourceTime" />
+
+            <include
+                android:id="@+id/layoutPmDestinationTime"
+                layout="@layout/layout_small_time_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPmTripsTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvToTitle1"
+                app:layout_constraintTop_toTopOf="@+id/tvPmTripsTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

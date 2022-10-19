@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragment.VerifyUserFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLogo"
+            style="@style/CovidStopImageViewLogoStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtLogin"
+            style="@style/LoginRegisterTextVerifyViewStyle"
+            android:text="@string/please_verify"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+            app:layout_constraintStart_toStartOf="@+id/imgLogo"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtInfo"
+            style="@style/VerifyTextViewStyle"
+            android:text="@string/verify_info"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtYourSelfieTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/first_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCameraBrowseView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtYourSelfieTitle"
+            style="@style/VerifyUserCameraBrowseImageViewStyle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCamera"
+            android:text="@string/camerabrowse"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCameraBrowseView"
+            app:layout_constraintEnd_toEndOf="@+id/imgCameraBrowseView"
+            app:layout_constraintStart_toStartOf="@+id/imgCameraBrowseView"
+            app:layout_constraintTop_toTopOf="@+id/imgCameraBrowseView"
+            style="@style/VerifyUserCameraBrowseTextViewStyle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtUserID"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/user_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgCameraBrowseView" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCameraBrowseViewTwo"
+            style="@style/VerifyUserCameraBrowseImageViewStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUserID" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCameraTwo"
+            style="@style/VerifyUserCameraBrowseTextViewStyle"
+            android:text="@string/camerabrowse"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCameraBrowseViewTwo"
+            app:layout_constraintEnd_toEndOf="@+id/imgCameraBrowseViewTwo"
+            app:layout_constraintStart_toStartOf="@+id/imgCameraBrowseViewTwo"
+            app:layout_constraintTop_toTopOf="@+id/imgCameraBrowseViewTwo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtEnterOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/enter_otp"
+            android:textColor="@color/colorBlackText_CC000000"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgCameraBrowseViewTwo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/we_sent_on_your_mobile_number"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEnterOTP"
+            app:layout_constraintStart_toEndOf="@+id/txtEnterOTP"
+            app:layout_constraintTop_toTopOf="@+id/txtEnterOTP" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/firstPinView"
+            style="@style/PinWidget.PinView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/colorRed"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="4"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="0dp"
+            app:itemWidth="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txtEnterOTP"
+            app:layout_constraintTop_toBottomOf="@+id/txtEnterOTP"
+            app:lineColor="@color/colorGrayText"
+            app:lineWidth="2dp"
+            app:viewType="rectangle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerifyNow"
+            style="@style/MaterialButtonStyle"
+            android:text="@string/verify_now"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="@dimen/_16sdp"
+            app:cornerRadius="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstPinView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

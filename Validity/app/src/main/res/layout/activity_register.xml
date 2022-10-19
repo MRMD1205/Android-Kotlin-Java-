@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        tools:context=".activity.RegisterActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toTopOf="@+id/txtFullName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:text="Full Name"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/edtFullName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:hint="Enter full name"
+            android:importantForAutofill="yes"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+            app:layout_constraintTop_toBottomOf="@+id/txtFullName"
+            app:met_errorColor="#DA1616"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter full name"
+            tools:layout_editor_absoluteX="21dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="Email"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtFullName" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/shape_edttext_bg"
+            android:hint="Enter email"
+            android:importantForAutofill="yes"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/txtPassword"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+            app:met_errorColor="#DA1616"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter email"
+            tools:layout_editor_absoluteX="21dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="Password"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/shape_edttext_bg"
+            android:hint="Enter password"
+            android:importantForAutofill="yes"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/txtConfirmPassword"
+            app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+            app:met_errorColor="#DA1616"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter password"
+            tools:layout_editor_absoluteX="21dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="Confirm Password"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/edtConfirmPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:hint="Enter confirm password"
+            android:importantForAutofill="yes"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@+id/txtBtnRegister"
+            app:layout_constraintTop_toBottomOf="@+id/txtConfirmPassword"
+            app:met_errorColor="#DA1616"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Enter confirm password"
+            tools:layout_editor_absoluteX="21dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtBtnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/shape_btn_bg"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="Register"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtConfirmPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

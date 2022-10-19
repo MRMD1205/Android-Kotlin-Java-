@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMainContent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        app:cardCornerRadius="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCategory"
+                android:layout_width="@dimen/_256sdp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/demo_home_img"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCategoryOverlay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/mask_black"
+                app:layout_constraintStart_toStartOf="@+id/ivCategory"
+                app:layout_constraintEnd_toEndOf="@+id/ivCategory"
+                app:layout_constraintTop_toTopOf="@+id/ivCategory"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCategory"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCategoryName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:letterSpacing="0.3"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toTopOf="@+id/ivPolygon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:ignore="RtlSymmetry"
+                tools:text="Agriculture erjfirfjifiejfiefjeijfefejfief" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPolygon"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/ic_polygon"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCategory"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCategoryName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCategoryNoValue"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivPolygon"
+                app:layout_constraintEnd_toEndOf="@+id/ivPolygon"
+                app:layout_constraintStart_toStartOf="@+id/ivPolygon"
+                app:layout_constraintTop_toTopOf="@+id/ivPolygon"
+                tools:text="123" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

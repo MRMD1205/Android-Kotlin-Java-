@@ -1,0 +1,175 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog</item>
+    </style>
+
+    <style name="MainScreenStyle" parent="AppTheme">
+        <item name="android:statusBarColor">@color/colorAccent</item>
+    </style>
+
+    <style name="ProgressDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="colorAccent">@color/sky</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ProgressBarColor">
+        <item name="colorAccent">@color/greyDark</item>
+    </style>
+
+    <style name="BlackText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/_16sdp</item>
+    </style>
+
+    <style name="CustomEditTextStyle" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_rounded_border_gray_edittext</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:textColor">@color/greyDark</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:hint">@string/dots</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textColorHint">@color/grey_text</item>
+    </style>
+
+    <style name="CustomTextSmallGreyStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey_text</item>
+        <item name="android:textSize">@dimen/_9ssp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+
+    </style>
+
+    <style name="CustomTextMediumGreyStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+
+    </style>
+
+    <style name="CustomTextLargeGreyStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+    </style>
+
+    <style name="CallScreenNumberText">
+        <item name="android:layout_marginStart">@dimen/_12sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_12sdp</item>
+        <item name="android:layout_marginTop">@dimen/_4sdp</item>
+        <item name="android:drawableEnd">@drawable/ic_phone</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+    </style>
+
+
+    <style name="buttonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+    </style>
+
+    <style name="toolbarTheme" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="DialogWithAnimation" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/grow_out</item>
+    </style>
+
+    <style name="DialogAnimationInOutFromTop">
+        <item name="android:windowEnterAnimation">@anim/anim_slide_in_from_top</item>
+        <item name="android:windowExitAnimation">@anim/anim_slide_out_to_top</item>
+    </style>
+
+    <style name="viewLineGrey">
+        <item name="android:layout_height">@dimen/_1sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/greyBg</item>
+    </style>
+
+    <string name="dots">...</string>
+
+    <style name="simpletooltip_default" parent="@android:style/TextAppearance.Medium">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_42sdp</item>
+        <item name="android:layout_marginTop">@dimen/_4sdp</item>
+        <item name="android:layout_marginStart">@dimen/_14sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_14sdp</item>
+        <item name="android:background">@drawable/editext_bg</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+    </style>
+
+    <style name="StyleDaysOfWeekText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="CustomRatingBarBig" parent="Widget.AppCompat.RatingBar.Indicator">
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+        <item name="android:progressDrawable">@drawable/selector_ratingbar_big</item>
+    </style>
+</resources>

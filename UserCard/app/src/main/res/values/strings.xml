@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UserCard</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="arv">ARV</string>
+    <string name="rent">Rent</string>
+    <string name="skip_trace">Skip Trace</string>
+    <string name="confirm">Confirm</string>
+    <string name="owner_information">Owner Information</string>
+    <string name="next">Next</string>
+    <string name="how_much_do_they_owe">How much do they owe?</string>
+    <string name="total_monthly_payments_piti">Total Monthly Payments(PITI)</string>
+    <string name="behind_on_payments">Behind on payments?</string>
+    <string name="repairs">Repairs?</string>
+    <string name="cash_to_seller">Cash to seller?</string>
+</resources>

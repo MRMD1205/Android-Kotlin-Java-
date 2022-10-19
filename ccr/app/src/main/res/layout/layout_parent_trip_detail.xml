@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="item"
+            type="com.courtesycarsredhill.model.TripdetailData" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/layoutTripTiming"
+                layout="@layout/layout_parent_trip_timimg" />
+
+            <include
+                android:id="@+id/layout_driver"
+                layout="@layout/layout_short_detail_row" />
+
+            <include
+                android:id="@+id/layout_escort"
+                layout="@layout/layout_short_detail_row" />
+
+            <include
+                android:id="@+id/layout_school"
+                layout="@layout/layout_short_detail_row" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

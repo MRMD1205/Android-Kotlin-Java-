@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="item"
+            type="com.courtesycarsredhill.model.TripListData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyBg"
+        android:padding="@dimen/_8sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTripCode"
+            style="@style/CustomTextSmallGreyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trip_code"
+            android:textColor="@color/grey_text"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTripCodeValue"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:text="@{item.routename}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvTripType"
+            app:layout_constraintTop_toBottomOf="@+id/tvTripCode" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTripStatus"
+            style="@style/CustomTextMediumGreyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{item.tripstatus}"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTripCode" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTripType"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{item.triptype}"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+             />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

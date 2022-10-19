@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMessage"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:padding="@dimen/_16sdp"
+                android:singleLine="false"
+                android:text="@string/alert_sos"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.ebanx.swipebtn.SwipeButton
+                android:id="@+id/swipe_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:button_background="@drawable/slide_bg_green"
+                app:button_bottom_padding="16dp"
+                app:button_image_disabled="@drawable/ic_white_arrow_right"
+                app:button_image_enabled="@color/green_sos"
+                app:button_image_height="@dimen/_66sdp"
+                app:button_image_width="@dimen/_58sdp"
+                app:button_left_padding="16dp"
+                app:button_right_padding="16dp"
+                app:button_top_padding="16dp"
+                app:has_activate_state="true"
+                app:initial_state="disabled"
+                app:inner_text_background="@drawable/slide_bg_red"
+                app:inner_text_bottom_padding="18dp"
+                app:inner_text_color="@android:color/white"
+                app:inner_text_size="16sp"
+                app:inner_text_top_padding="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMessage" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSosTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="SOS"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/swipe_btn"
+                app:layout_constraintEnd_toEndOf="@+id/swipe_btn"
+                app:layout_constraintStart_toStartOf="@+id/swipe_btn"
+                app:layout_constraintTop_toTopOf="@id/swipe_btn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

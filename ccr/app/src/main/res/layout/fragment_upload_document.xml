@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_12sdp">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_accent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivDocumentUploaded"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/Image_background"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@id/clDocDetails"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPdfIcon"
+            android:layout_width="@dimen/_126sdp"
+            android:layout_height="@dimen/_138sdp"
+            android:background="@drawable/pdf_icon_orange"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDocumentUploaded"
+            app:layout_constraintEnd_toEndOf="@+id/ivDocumentUploaded"
+            app:layout_constraintStart_toStartOf="@+id/ivDocumentUploaded"
+            app:layout_constraintTop_toTopOf="@+id/ivDocumentUploaded" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPdfName"
+            style="@style/CustomTextSmallGreyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPdfIcon"
+            tools:text="Test.pdf" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btEditImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:backgroundTint="@color/blue_button"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/white"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDocumentUploaded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:maxImageSize="@dimen/_20sdp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDocDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/CustomTextSmallGreyStyle"
+                android:layout_margin="@dimen/_14sdp"
+                android:text="@string/str_title"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.courtesycarsredhill.util.CustomSpinner
+                android:id="@+id/etDocumentTitleValue"
+                style="@style/editTextStyle"
+                android:hint="@string/str_title"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/greySecondary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSelectExpiryDateTitle"
+                style="@style/CustomTextSmallGreyStyle"
+                android:layout_margin="@dimen/_14sdp"
+                android:text="@string/select_expiry_date"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDocumentTitleValue" />
+
+            <View
+                android:id="@+id/viewDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:background="@drawable/editext_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSelectExpiryDateTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvExpiryDateValue"
+                style="@style/CustomTextMediumGreyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewDate"
+                app:layout_constraintStart_toStartOf="@+id/viewDate"
+                app:layout_constraintTop_toTopOf="@+id/viewDate"
+                tools:text="@string/dummy_date" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDropDownArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/ic_arrow_drop_down"
+                app:layout_constraintBottom_toBottomOf="@+id/viewDate"
+                app:layout_constraintEnd_toEndOf="@+id/viewDate"
+                app:layout_constraintTop_toTopOf="@+id/viewDate" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btUploadNow"
+                style="@style/buttonStyle"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/upload_now"
+                app:layout_constraintBottom_toTopOf="@+id/btCancelNow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewDate" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btCancelNow"
+                style="@style/buttonStyle"
+                android:layout_margin="@dimen/_14sdp"
+                android:background="@drawable/grey_rounded_corner_button_bg"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/cancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btUploadNow"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

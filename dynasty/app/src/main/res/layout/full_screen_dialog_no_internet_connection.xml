@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_wifi"
+        app:layout_constraintBottom_toTopOf="@+id/tvNoInternet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNoInternet"
+        style="@style/textDescriptionStyle"
+        android:layout_margin="@dimen/_16sdp"
+        android:gravity="center"
+        android:text="@string/no_internet_dialog"
+        android:textColor="@color/colorGray_777777"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivWifi"
+        app:layout_constraintStart_toStartOf="@+id/ivWifi"
+        app:layout_constraintTop_toBottomOf="@+id/ivWifi" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btTryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:elevation="1dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoInternet">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTryAgainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:paddingStart="@dimen/_28sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_28sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="@string/try_again"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

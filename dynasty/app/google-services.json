@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "30988250692",
+    "firebase_url": "https://dynasty-b596b.firebaseio.com",
+    "project_id": "dynasty-b596b",
+    "storage_bucket": "dynasty-b596b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30988250692:android:5cb61ec9a61303f56f9611",
+        "android_client_info": {
+          "package_name": "com.dynasty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30988250692-ual76hf39in6phqn8lpuom9m30qpr58e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfBD7nbCrGVKVeTqoiYM1Esnf7mIlfUpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30988250692-ual76hf39in6phqn8lpuom9m30qpr58e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "30988250692-fav8v2qle3qaefp6kpsj1k632ev7l2rb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tridhyatech.Dynasty"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

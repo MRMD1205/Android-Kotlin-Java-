@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rounded_border_gray"
+        android:paddingStart="@dimen/_14sdp"
+        android:paddingTop="@dimen/_1sdp"
+        android:paddingEnd="@dimen/_14sdp"
+        android:paddingBottom="@dimen/_1sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTime"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="08:45"
+            android:fontFamily="@font/opensans_semibold"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

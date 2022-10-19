@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_accent" />
+
+            <include
+                android:id="@+id/layoutJobHeader"
+                layout="@layout/layout_job_offer_header_card" />
+
+            <include
+                android:id="@+id/layoutAmount"
+                layout="@layout/layout_small_amount_row" />
+
+            <include
+                android:id="@+id/layoutDaysOfWeek"
+                layout="@layout/layout_days_of_week" />
+
+            <include
+                android:id="@+id/layoutPickUpAddressList"
+                layout="@layout/layout_pickup_address" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

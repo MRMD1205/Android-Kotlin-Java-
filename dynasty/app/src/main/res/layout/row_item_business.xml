@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCategory"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_140sdp"
+            android:src="@drawable/rect_placeholder"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="@dimen/_8sdp"
+            tools:ignore="HardcodedText" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gdStart"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gdEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivImgOverlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@color/grayTranslucent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/gdStart"
+            app:layout_constraintTop_toTopOf="@+id/ivCategory"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCategory"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBusinessName"
+            android:layout_width="0dp"
+            android:letterSpacing="0.3"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            tools:text="Agriculture"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp"
+            android:includeFontPadding="false"
+            app:layout_constraintEnd_toEndOf="@+id/ivImgOverlay"
+            app:layout_constraintStart_toStartOf="@+id/ivImgOverlay"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCategory"
+            app:layout_constraintTop_toTopOf="@+id/ivCategory"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvBusinessLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            tools:text="New York"
+            android:textColor="@color/whiteTranslucent"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="@+id/ivImgOverlay"
+            app:layout_constraintStart_toStartOf="@+id/ivImgOverlay"
+            app:layout_constraintTop_toBottomOf="@+id/tvBusinessName"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvVaccineTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/covid19_test_results"
+        android:textColor="@color/colorBlackText_CC000000"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/july272020"
+        android:textColor="@color/colorGrayText"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintStart_toStartOf="@+id/tvVaccineTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvVaccineTitle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:src="@drawable/ic_red_add"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStatus"
+        app:layout_constraintEnd_toStartOf="@+id/tvStatus"
+        app:layout_constraintTop_toTopOf="@+id/tvStatus" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/positive"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/devider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:background="@color/colorStroke"
+        app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

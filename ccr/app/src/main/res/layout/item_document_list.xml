@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivDocumentImage"
+                android:layout_width="@dimen/_54sdp"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@color/grey_f2f2f2"
+                android:padding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPdfIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_file_pdf"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/ivDocumentImage"
+                app:layout_constraintEnd_toEndOf="@+id/ivDocumentImage"
+                app:layout_constraintStart_toStartOf="@+id/ivDocumentImage"
+                app:layout_constraintTop_toTopOf="@+id/ivDocumentImage" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDocumentName"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toEndOf="@+id/ivDocumentImage"
+                app:layout_constraintTop_toTopOf="@+id/ivDocumentImage"
+                tools:text="Document Name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDocumentDate"
+                style="@style/CustomTextSmallGreyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:fontFamily="@font/opensans_regular"
+                android:singleLine="false"
+                android:text="@string/dummy_date_1"
+                android:textColor="@color/grey_text"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@id/ivDocumentImage"
+                app:layout_constraintStart_toEndOf="@+id/ivDocumentImage"
+                app:layout_constraintTop_toBottomOf="@+id/tvDocumentName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

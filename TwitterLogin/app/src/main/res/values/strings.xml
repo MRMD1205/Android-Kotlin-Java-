@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TwitterLogin</string>
+    <!--Twitter related-->
+    <string name="twitter_consumer_key">lTLrJCGLI7L77sIPNyhpbgJB1</string>
+    <string name="twitter_consumer_secret">7tVMRkM9LjNxPV50EUPcDSUzKHaTtfsxifWX0VibnLaLmqbqaU</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

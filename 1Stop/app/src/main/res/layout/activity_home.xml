@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightOrange"
+    app:layout_constraintVertical_weight="1"
+    tools:context=".activity.HomeActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorGreen"
+        android:paddingStart="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/ic_facebook"
+        app:title="@string/we_sent_on_your_mobile_number"
+        app:titleMarginStart="@dimen/_32sdp"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:id="@+id/viewHome"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@color/colorGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvRecentTestResult"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_margin="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintTop_toTopOf="@id/viewHome">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorRed"
+            android:id="@+id/tvRecentTestResults"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:text="@string/recent_test_results"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRecentTestResults"
+                app:layout_constraintBottom_toTopOf="@id/tvRecentTestResultsViewAll"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRecentTestResultsViewAll"
+                android:text="@string/viewall"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:textColor="@color/colorRed"
+                android:fontFamily="@font/poppins_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

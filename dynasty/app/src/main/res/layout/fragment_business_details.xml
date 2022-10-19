@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBusinessIntroFix"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@+id/clBusinessDetailsScrollable"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSideLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBusinessIcon"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@color/colorPrimary"
+                    app:layout_constraintBottom_toTopOf="@+id/viewBgBusinessCategory"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBusinessIconMask"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/polygon_mask"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBusinessIcon"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBusinessIcon"
+                    app:layout_constraintStart_toStartOf="@+id/ivBusinessIcon"
+                    app:layout_constraintTop_toTopOf="@+id/ivBusinessIcon" />
+
+                <View
+                    android:id="@+id/viewBgBusinessCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_162sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBusinessIcon"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivBusinessIcon" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCategoryName"
+                    android:layout_width="@dimen/_148sdp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:letterSpacing="0.4"
+                    android:maxLines="2"
+                    android:rotation="270"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/viewBgBusinessCategory"
+                    app:layout_constraintEnd_toEndOf="@+id/viewBgBusinessCategory"
+                    app:layout_constraintStart_toStartOf="@+id/viewBgBusinessCategory"
+                    app:layout_constraintTop_toTopOf="@+id/viewBgBusinessCategory"
+                    tools:text="agriculture" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/llSocialAccounts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:clipToPadding="false"
+                    android:paddingBottom="@dimen/_8sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/viewBgBusinessCategory"
+                    app:layout_constraintStart_toStartOf="@+id/viewBgBusinessCategory"
+                    app:layout_constraintTop_toBottomOf="@+id/viewBgBusinessCategory">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivFbIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:background="@drawable/ic_facebook_fill"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivTwitterIcon"
+                        style="@style/SocialIconsStyle"
+                        android:background="@drawable/ic_twitter_fill"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@+id/ivFbIcon"
+                        app:layout_constraintStart_toStartOf="@+id/ivFbIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/ivFbIcon" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivInstagramIcon"
+                        style="@style/SocialIconsStyle"
+                        android:background="@drawable/ic_instagram_filled"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@+id/ivTwitterIcon"
+                        app:layout_constraintStart_toStartOf="@+id/ivTwitterIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/ivTwitterIcon" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivLocationIcon"
+                        style="@style/SocialIconsStyle"
+                        android:background="@drawable/ic_fill_location"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@+id/ivInstagramIcon"
+                        app:layout_constraintStart_toStartOf="@+id/ivInstagramIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/ivInstagramIcon" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivEmailIcon"
+                        style="@style/SocialIconsStyle"
+                        android:background="@drawable/ic_new_fill_mail"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@+id/ivLocationIcon"
+                        app:layout_constraintStart_toStartOf="@+id/ivLocationIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/ivLocationIcon" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivSmsIcon"
+                        style="@style/SocialIconsStyle"
+                        android:background="@drawable/ic_sms_dots_fill"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@+id/ivEmailIcon"
+                        app:layout_constraintStart_toStartOf="@+id/ivEmailIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/ivEmailIcon" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivCallIcon"
+                        style="@style/SocialIconsStyle"
+                        android:background="@drawable/ic_new_call_icon"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@+id/ivSmsIcon"
+                        app:layout_constraintStart_toStartOf="@+id/ivSmsIcon"
+                        app:layout_constraintTop_toBottomOf="@+id/ivSmsIcon" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/clBusinessDetailsScrollable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintStart_toEndOf="@+id/clBusinessIntroFix"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCompanyName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_14sdp"
+                android:textColor="@color/colorTitle_27413C"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat,RtlSymmetry"
+                tools:text="@string/dummy_company_name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCompanyAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:ellipsize="middle"
+                android:includeFontPadding="false"
+                android:paddingStart="@dimen/_14sdp"
+                android:singleLine="true"
+                android:textColor="@color/gray_8027413C"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/tvCompanyName"
+                app:layout_constraintStart_toStartOf="@+id/tvCompanyName"
+                app:layout_constraintTop_toBottomOf="@+id/tvCompanyName"
+                tools:ignore="RtlCompat,RtlSymmetry"
+                tools:text="@string/dummy_company_address" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBusinessImgItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_162sdp"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_72sdp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                android:paddingEnd="@dimen/_18sdp"
+                android:visibility="visible"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat,RtlSymmetry"
+                tools:listitem="@layout/item_detail" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAboutUs"
+                style="@style/cardViewStyle"
+                android:visibility="gone"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toTopOf="@id/cvServices"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvBusinessImgItem"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                card_view:cardElevation="@dimen/_8sdp"
+                tools:ignore="RtlCompat">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivThemeBg1"
+                        style="@style/DetailsSectionHeaderStyle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:background="@drawable/transluecent_leaf_bg" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivThemeBg1Ovrlay"
+                        style="@style/DetailsSectionHeaderStyle"
+                        android:src="@color/mask_gray_header"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivThemeBg1"
+                        app:layout_constraintEnd_toEndOf="@+id/ivThemeBg1"
+                        app:layout_constraintStart_toStartOf="@+id/ivThemeBg1"
+                        app:layout_constraintTop_toTopOf="@+id/ivThemeBg1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAboutUsTitle"
+                        style="@style/OrangeTitleForDetailSection"
+                        android:text="@string/about_us"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivThemeBg1"
+                        app:layout_constraintStart_toStartOf="@+id/ivThemeBg1"
+                        app:layout_constraintTop_toTopOf="@+id/ivThemeBg1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAboutUsDescription"
+                        style="@style/textDescriptionStyle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivThemeBg1"
+                        tools:text="@string/about_us_dummy" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvServices"
+                style="@style/cardViewStyle"
+                android:visibility="gone"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toTopOf="@id/cvTags"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvAboutUs"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                card_view:cardElevation="@dimen/_8sdp"
+                tools:ignore="RtlCompat">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivThemeBg2"
+                        style="@style/DetailsSectionHeaderStyle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:background="@drawable/transluecent_leaf_bg" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivThemeBg2Ovrlay"
+                        style="@style/DetailsSectionHeaderStyle"
+                        android:src="@color/mask_gray_header"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivThemeBg2"
+                        app:layout_constraintEnd_toEndOf="@+id/ivThemeBg2"
+                        app:layout_constraintStart_toStartOf="@+id/ivThemeBg2"
+                        app:layout_constraintTop_toTopOf="@+id/ivThemeBg2" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvServicesTitle"
+                        style="@style/OrangeTitleForDetailSection"
+                        android:text="@string/services"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivThemeBg2"
+                        app:layout_constraintStart_toStartOf="@+id/ivThemeBg2"
+                        app:layout_constraintTop_toTopOf="@+id/ivThemeBg2" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvServices"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:overScrollMode="never"
+                        android:paddingTop="@dimen/_18sdp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivThemeBg2"
+                        tools:itemCount="3"
+                        tools:listitem="@layout/item_services" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTags"
+                style="@style/cardViewStyle"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:visibility="gone"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvServices"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                card_view:cardElevation="@dimen/_8sdp"
+                tools:ignore="RtlCompat">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivThemeBg3"
+                        style="@style/DetailsSectionHeaderStyle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:background="@drawable/transluecent_leaf_bg" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivThemeBg3Ovrlay"
+                        style="@style/DetailsSectionHeaderStyle"
+                        android:src="@color/mask_gray_header"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivThemeBg3"
+                        app:layout_constraintEnd_toEndOf="@+id/ivThemeBg3"
+                        app:layout_constraintStart_toStartOf="@+id/ivThemeBg3"
+                        app:layout_constraintTop_toTopOf="@+id/ivThemeBg3" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTagsTitle"
+                        style="@style/OrangeTitleForDetailSection"
+                        android:text="@string/tags"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivThemeBg3"
+                        app:layout_constraintStart_toStartOf="@+id/ivThemeBg3"
+                        app:layout_constraintTop_toTopOf="@+id/ivThemeBg3" />
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroup"
+                        style="@style/chipTextAppearance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_12sdp"
+                        app:chipSpacingHorizontal="@dimen/_8sdp"
+                        app:itemSpacing="@dimen/_8sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivThemeBg3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

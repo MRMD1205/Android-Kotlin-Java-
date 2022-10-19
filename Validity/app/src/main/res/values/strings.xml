@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Validity</string>
+
+    <string name="no_instance_found">App instance is not available because app is not running</string>
+    <string name="msg_network_error">Please check your internet connection</string>
+    <string name="msg_server_error">Server not responding. Please try again after some time.</string>
+
+    <string name="want_to_logout">Are you sure you want to logout?</string>
+    <string name="dailog_ok">Ok</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!--    Notification related-->
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Events</string>
+
+    <string name="dot">●</string>
+
+    <!--Menu-->
+    <string name="menu_vehicles">Vehicles</string>
+
+    <string name="menu_transport_vehicles">Transport Vehicles</string>
+    <string name="menu_view_transport_vehicle">Transport Vehicle Details</string>
+    <string name="menu_add_transport_vehicle">Add Transport Vehicle</string>
+    <string name="menu_update_transport_vehicle">Update Transport Vehicle</string>
+
+    <string name="menu_reminders">Reminders</string>
+    <string name="menu_personal_documents">Personal Documents</string>
+    <string name="menu_home_appliances">Home Appliances</string>
+    <string name="menu_view_home_appliances">Home Appliances Details</string>
+    <string name="menu_Add_home_appliances">Add Home Appliances</string>
+    <string name="menu_Update_home_appliances">Update Home Appliances</string>
+    <string name="menu_property">Property</string>
+    <string name="menu_industrial">Industrial</string>
+    <string name="menu_view_industrial">Industrial Details</string>
+    <string name="menu_add_industrial">Add Industrial</string>
+    <string name="menu_update_industrial">Update Industrial</string>
+    <string name="menu_others">Others</string>
+
+    <string name="menu_view_vehicles">Vehicle Details</string>
+    <string name="menu_add_vehicles">Add Vehicles</string>
+    <string name="menu_update_vehicles">Update Vehicles</string>
+    <string name="menu_add_personal_documents">Add Personal Documents</string>
+    <string name="menu_view_personal_documents">Personal Document Details</string>
+    <string name="menu_update_personal_documents">Update Personal Documents</string>
+    <string name="menu_view_property">Property Details</string>
+    <string name="menu_add_property">Add Property</string>
+    <string name="menu_update_property">Update Property</string>
+    <string name="menu_validity">Validity</string>
+    <string name="menu_tools">Tools</string>
+
+    <string name="menu_accident">Accident</string>
+    <string name="menu_expense">Expense</string>
+    <string name="menu_insurance">Insurance</string>
+    <string name="menu_permit">Permit</string>
+    <string name="menu_puc">PUC</string>
+    <string name="menu_refuel">Refuel</string>
+    <string name="menu_services">Services</string>
+    <string name="menu_summery">Summery</string>
+
+    <string name="menu_add_accident">Add Accident</string>
+    <string name="menu_add_expense">Add Expense</string>
+    <string name="menu_add_insurance">Add Insurance</string>
+    <string name="menu_add_permit">Add Permit</string>
+    <string name="menu_add_puc">Add PUC</string>
+    <string name="menu_add_refuel">Add Refuel</string>
+    <string name="menu_add_services">Add Services</string>
+    <string name="menu_add_others">Add Others</string>
+
+    <string name="menu_update_accident">Update Accident</string>
+    <string name="menu_update_expense">Update Expense</string>
+    <string name="menu_update_insurance">Update Insurance</string>
+    <string name="menu_update_permit">Update Permit</string>
+    <string name="menu_update_puc">Update PUC</string>
+    <string name="menu_update_refuel">Update Refuel</string>
+    <string name="menu_update_services">Update Services</string>
+    <string name="menu_update_others">Update Others</string>
+
+    <string name="menu_view_accident">Accident Details</string>
+    <string name="menu_view_expense">Expense Details</string>
+    <string name="menu_view_insurance">Insurance Details</string>
+    <string name="menu_view_permit">Permit Details</string>
+    <string name="menu_view_puc">PUC Details</string>
+    <string name="menu_view_refuel">Refuel Details</string>
+    <string name="menu_view_services">Services Details</string>
+    <string name="menu_view_others">Others Details</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="services">
+        <item>Body</item>
+        <item>Break</item>
+        <item>Cluth</item>
+        <item>Cooling System</item>
+        <item>Engine</item>
+        <item>Spark Plug</item>
+        <item>General</item>
+        <item>Other</item>
+        <item>Oil Change</item>
+        <item>Bettery</item>
+    </string-array>
+
+    <string name="want_delete_this">Are you sure you want to delete this item?</string>
+
+    <string name="want_set_reminder">Are you sure you want to set reminder on</string>
+    <string name="reminder_added_successfully">Reminder added successfully</string>
+
+    <string name="want_delete_this_vehicle">Are you sure you want to delete this vehicle?</string>
+    <string name="want_delete_this_transport_vehicle">Are you sure you want to delete this transport vehicle?</string>
+    <string name="want_delete_this_personal_document">Are you sure you want to delete this personal document?</string>
+    <string name="want_delete_this_home_appliance">Are you sure you want to delete this home appliance?</string>
+    <string name="want_delete_this_property">Are you sure you want to delete this property?</string>
+    <string name="want_delete_this_industy">Are you sure you want to delete this industy?</string>
+
+    <string name="open">Open</string>
+    <string name="images">Images</string>
+    <string name="view">View</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="transport_tool_fitness">Fitness Certificate</string>
+    <string name="transport_tool_fitness_add">Add Fitness Certificate</string>
+    <string name="transport_tool_fitness_edit">Edit Fitness Certificate</string>
+    <string name="transport_tool_road_tax">Road Tax</string>
+    <string name="transport_tool_road_tax_add">Add Road Tax</string>
+    <string name="transport_tool_road_tax_edit">Edit Road Tax</string>
+    <string name="transport_tool_permit">Permit</string>
+    <string name="transport_tool_permit_add">Add Permit</string>
+    <string name="transport_tool_permit_edit">Edit Permit</string>
+    <string name="transport_tool_speed_governor">Speed Governor</string>
+    <string name="transport_tool_speed_governor_add">Add Speed Governor</string>
+    <string name="transport_tool_speed_governor_edit">Edit Speed Governor</string>
+
+</resources>

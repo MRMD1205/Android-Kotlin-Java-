@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="item"
+            type="com.courtesycarsredhill.model.TripdetailData" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTrip"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greyBg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="@string/trip"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvStatus"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:text="@{item.tripType}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTrip"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTrip"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTripType"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@{item.tripStatus}"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTrip"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTrip"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+            <include
+                android:id="@+id/layoutSourceTime"
+                layout="@layout/layout_large_time_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTrip" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSourceAddress"
+                style="@style/CustomTextMediumGreyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@{item.sourceAddress}"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:fontFamily="@font/opensans_regular"
+                android:singleLine="false"
+                app:layout_constraintEnd_toEndOf="@+id/layoutSourceTime"
+                app:layout_constraintStart_toStartOf="@+id/layoutSourceTime"
+                app:layout_constraintTop_toBottomOf="@+id/layoutSourceTime" />
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSourceActualTime"
+                style="@style/CustomTextSmallGreyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_regular"
+                android:singleLine="true"
+                android:layout_marginBottom="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@color/grey_text"
+                app:layout_constraintEnd_toEndOf="@+id/layoutSourceTime"
+                app:layout_constraintStart_toStartOf="@+id/tvSourceAddress"
+                app:layout_constraintTop_toBottomOf="@+id/tvSourceAddress" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivRightArror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:srcCompat="@drawable/ic_arrow_left"
+                android:layout_marginStart="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/layoutSourceTime"
+                app:layout_constraintBottom_toBottomOf="@+id/layoutSourceTime"/>
+
+            <include
+                android:id="@+id/layoutDestinationTime"
+                layout="@layout/layout_large_time_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivRightArror"
+                app:layout_constraintTop_toBottomOf="@+id/tvTrip" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDestiantionAddress"
+                style="@style/CustomTextMediumGreyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@{item.destinationAddress}"
+                android:maxLines="2"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/black"
+                android:singleLine="false"
+                app:layout_constraintEnd_toEndOf="@+id/layoutDestinationTime"
+                app:layout_constraintStart_toStartOf="@+id/layoutDestinationTime"
+                app:layout_constraintTop_toBottomOf="@+id/layoutDestinationTime" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDestinationActualTime"
+                style="@style/CustomTextSmallGreyStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/grey_text"
+                app:layout_constraintEnd_toEndOf="@+id/tvDestiantionAddress"
+                app:layout_constraintStart_toStartOf="@+id/tvDestiantionAddress"
+                app:layout_constraintTop_toBottomOf="@+id/tvDestiantionAddress" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

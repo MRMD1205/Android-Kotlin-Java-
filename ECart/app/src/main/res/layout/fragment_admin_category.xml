@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AdminCategoryFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvItemCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/item_category"
+        android:textColor="@color/themeColor"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgTShirts"
+        style="@style/CategoryImageViewStyle"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:src="@drawable/ic_t_shirt"
+        app:layout_constraintEnd_toStartOf="@id/imgJersey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvItemCategory" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgJersey"
+        style="@style/CategoryImageViewStyle"
+        android:src="@drawable/ic_jersey"
+        app:layout_constraintEnd_toStartOf="@id/imgLongSleevesDress"
+        app:layout_constraintStart_toEndOf="@id/imgTShirts"
+        app:layout_constraintTop_toBottomOf="@id/tvItemCategory" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLongSleevesDress"
+        style="@style/CategoryImageViewStyle"
+        android:src="@drawable/ic_dresses"
+        app:layout_constraintEnd_toStartOf="@id/imgHood"
+        app:layout_constraintStart_toEndOf="@id/imgJersey"
+        app:layout_constraintTop_toBottomOf="@id/tvItemCategory" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgHood"
+        style="@style/CategoryImageViewStyle"
+        android:src="@drawable/ic_hood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgLongSleevesDress"
+        app:layout_constraintTop_toBottomOf="@id/tvItemCategory" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgSunGlasses"
+        style="@style/CategoryImageViewStyle"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:src="@drawable/ic_sunglasses"
+        app:layout_constraintEnd_toStartOf="@id/imgPurse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgTShirts" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgPurse"
+        style="@style/CategoryImageViewStyle"
+        android:src="@drawable/ic_purse"
+        app:layout_constraintEnd_toStartOf="@id/imgHat"
+        app:layout_constraintStart_toEndOf="@id/imgSunGlasses"
+        app:layout_constraintTop_toBottomOf="@id/imgTShirts" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgHat"
+        style="@style/CategoryImageViewStyle"
+        android:src="@drawable/ic_hat"
+        app:layout_constraintEnd_toStartOf="@id/imgShoes"
+        app:layout_constraintStart_toEndOf="@id/imgPurse"
+        app:layout_constraintTop_toBottomOf="@id/imgTShirts" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgShoes"
+        style="@style/CategoryImageViewStyle"
+        android:src="@drawable/ic_shoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgHat"
+        app:layout_constraintTop_toBottomOf="@id/imgTShirts" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgHeadPhones"
+        style="@style/CategoryImageViewStyle"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:src="@drawable/ic_headphones"
+        app:layout_constraintEnd_toStartOf="@id/imgLaptop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgSunGlasses" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLaptop"
+        style="@style/CategoryImageViewStyle"
+        android:src="@drawable/ic_laptop"
+        app:layout_constraintEnd_toStartOf="@id/imgWatch"
+        app:layout_constraintStart_toEndOf="@id/imgHeadPhones"
+        app:layout_constraintTop_toBottomOf="@id/imgSunGlasses" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgWatch"
+        style="@style/CategoryImageViewStyle"
+        android:src="@drawable/ic_watch"
+        app:layout_constraintEnd_toStartOf="@id/imgMobile"
+        app:layout_constraintStart_toEndOf="@id/imgLaptop"
+        app:layout_constraintTop_toBottomOf="@id/imgSunGlasses" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgMobile"
+        style="@style/CategoryImageViewStyle"
+        android:src="@drawable/ic_mobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgWatch"
+        app:layout_constraintTop_toBottomOf="@id/imgSunGlasses" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

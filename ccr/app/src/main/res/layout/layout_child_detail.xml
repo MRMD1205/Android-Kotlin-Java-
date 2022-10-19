@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layoutChildInfo"
+                layout="@layout/layout_child_info" />
+
+            <include
+                android:id="@+id/layoutSchoolInfo"
+                layout="@layout/layout_school_info" />
+
+            <include
+                android:id="@+id/layoutParentInfo"
+                layout="@layout/layout_parent_info" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

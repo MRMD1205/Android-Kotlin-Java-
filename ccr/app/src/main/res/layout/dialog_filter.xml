@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                style="@style/CustomTextSmallGreyStyle"
+                tool:text="@string/str_title" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMessage"
+                style="@style/CustomTextLargeGreyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_16sdp"
+                android:singleLine="false"
+                android:text="@string/filter"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintTop_toTopOf="parent"
+                tool:layout_editor_absoluteX="13dp"
+                tool:layout_editor_absoluteY="13dp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+                android:hint="@string/select_month"
+                app:layout_constraintHorizontal_weight="0.5"
+                android:drawableEnd="@drawable/ic_down"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/spinnerYear"
+                />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_month"
+                android:overlapAnchor="false"
+                android:drawableEnd="@drawable/ic_down"
+                app:layout_constraintHorizontal_weight="0.4"
+                app:layout_constraintStart_toEndOf="@id/spinnerMonth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+                />
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutButtons"
+                android:layout_marginTop="@dimen/_16sdp"
+                layout="@layout/layout_bottons"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerMonth"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

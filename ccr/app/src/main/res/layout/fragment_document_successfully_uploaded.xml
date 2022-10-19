@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.DocumentSuccessfullyUploadedFragment">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_accent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSecondaryContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivUploadSucessIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_green_check_circle"
+                app:layout_constraintBottom_toTopOf="@+id/tvUploadedSuccessfully"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUploadedSuccessfully"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/uploaded_successfully"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_19ssp"
+                app:layout_constraintBottom_toTopOf="@+id/btGoToHome"
+                app:layout_constraintEnd_toEndOf="@+id/ivUploadSucessIcon"
+                app:layout_constraintStart_toStartOf="@+id/ivUploadSucessIcon"
+                app:layout_constraintTop_toBottomOf="@+id/ivUploadSucessIcon" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btGoToHome"
+                style="@style/buttonStyle"
+                android:layout_margin="@dimen/_14sdp"
+                android:background="@drawable/orange_rounded_corner_button_bg"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/go_to_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="colorAccent">@color/colorOrange</color>
+
+        <color name="black">#FF000000</color>
+        <color name="colorTransparentBlack">#00000000</color>
+        <color name="colorTransparentBlack50">#44000000</color>
+
+        <color name="white">#FFFFFFFF</color>
+
+        <color name="colorGray_777777">#777777</color>
+        <color name="colorGrayBorder">#07000000</color>
+        <color name="colorGrayText">#878787</color>
+
+        <color name="colorOrange">#F4702C</color>
+        <color name="colorLightOrange">#FFF8F4</color>
+        <color name="colorCenterOrange">#E15B38</color>
+
+        <color name="colorRed">#CF4743</color>
+
+        <color name="colorGreen">#348D7C</color>
+        <color name="colorLightGreen">#8FB6AF</color>
+        <color name="colorCenterGreen">#248774</color>
+
+        <color name="colorBlackText_CC000000">#CC000000</color>
+    </resources>

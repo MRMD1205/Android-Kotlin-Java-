@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FingerPrintRecognization</string>
+    <string name="fingerprint_authentication">Fingerprint Authentication</string>
+    <string name="touch_and_hold_your_finger_untill_scan_complete">Touch and Hold your finger untill scan complete.</string>
+</resources>

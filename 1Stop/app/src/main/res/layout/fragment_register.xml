@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragment.RegisterFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLogo"
+            style="@style/CovidStopImageViewLogoStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtLogin"
+            style="@style/LoginRegisterLogoTextViewStyle"
+            android:text="@string/register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtFirstNameTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/first_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtFirstName"
+            style="@style/LoginRegisterEditTextStyle"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFirstNameTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMiddleNameTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/middle_name"
+            app:layout_constraintEnd_toStartOf="@id/txtLastNameTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtFirstName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtMiddleName"
+            style="@style/LoginRegisterEditTextStyle"
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:hint="@string/middle_name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@id/edtLastName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMiddleNameTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtLastNameTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:layout_marginStart="0dp"
+            android:text="@string/last_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtMiddleNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/edtFirstName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtLastName"
+            style="@style/LoginRegisterEditTextStyle"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edtMiddleName"
+            app:layout_constraintTop_toBottomOf="@+id/txtLastNameTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtEmailTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtMiddleName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtEmail"
+            style="@style/LoginRegisterEditTextStyle"
+            android:hint="@string/enter_your_email_address"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmailTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSuffixTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/suffix"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtSuffix"
+            style="@style/LoginRegisterEditTextStyle"
+            android:hint="@string/enter_your_suffix"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSuffixTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtAddressOneTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/address_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtSuffix" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtAddressOne"
+            style="@style/LoginRegisterEditTextStyle"
+            android:hint="@string/enter_your_address"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAddressOneTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtAddressTwoTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/address_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddressOne" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtAddressTwo"
+            style="@style/LoginRegisterEditTextStyle"
+            android:hint="@string/enter_your_address_line_2"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAddressTwoTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCityTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/city"
+            app:layout_constraintEnd_toStartOf="@id/txtStateTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddressTwo" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtCity"
+            style="@style/LoginRegisterEditTextStyle"
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:hint="@string/your_city"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@id/edtState"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCityTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtStateTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:layout_marginStart="0dp"
+            android:text="@string/state"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtCityTitle"
+            app:layout_constraintTop_toBottomOf="@+id/edtAddressTwo" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtState"
+            style="@style/LoginRegisterEditTextStyle"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:hint="@string/your_state"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edtCity"
+            app:layout_constraintTop_toBottomOf="@+id/txtStateTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtZipTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/zip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtCity" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtZip"
+            style="@style/LoginRegisterEditTextStyle"
+            android:hint="@string/area_zip_code"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtZipTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPasswordTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtZip" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtPassword"
+            style="@style/LoginRegisterEditTextStyle"
+            android:hint="@string/your_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPasswordTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtConfirmPasswordTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/confirm_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtConfirmPassword"
+            style="@style/LoginRegisterEditTextStyle"
+            android:hint="@string/your_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtConfirmPasswordTitle" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/chkVerifyByPId"
+            style="@style/MaterialCheckBoxStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtConfirmPassword" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/remember_password"
+            app:layout_constraintBottom_toBottomOf="@+id/chkVerifyByPId"
+            app:layout_constraintStart_toEndOf="@+id/chkVerifyByPId"
+            app:layout_constraintTop_toTopOf="@+id/chkVerifyByPId"
+            style="@style/LoginRegisterCBTexView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            style="@style/MaterialButtonStyle"
+            android:text="@string/register"
+            app:backgroundTint="@null"
+            app:cornerRadius="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chkVerifyByPId" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

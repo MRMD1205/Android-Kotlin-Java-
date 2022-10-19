@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragment.VerifyUserFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBackArrowVerifyUser"
+            style="@style/SimpleBlackBackArrowStyle"
+            android:src="@drawable/ic_black_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imgLogo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLogo"
+            style="@style/CovidStopImageViewLogoStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtLogin"
+            style="@style/LoginRegisterTextVerifyViewStyle"
+            android:text="@string/please_verify"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+            app:layout_constraintStart_toStartOf="@+id/imgLogo"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtInfo"
+            style="@style/VerifyrTextViewStyle"
+            android:text="@string/verify_info"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtYourSelfieTitle"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/first_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfo" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvFirstNameImagePicker"
+            style="@style/ImagePickerCardViewStyle"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtYourSelfieTitle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCameraBrowseView"
+                    style="@style/DottedBorderImageViewStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCamera"
+                    style="@style/CameraBrowserTextViewStyle"
+                    android:text="@string/cameraBrowse"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtUserID"
+            style="@style/LoginRegisterTextViewStyle"
+            android:text="@string/user_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvFirstNameImagePicker" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvUserIdImagePicker"
+            style="@style/ImagePickerCardViewStyle"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUserID">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCameraBrowseViewTwo"
+                    style="@style/DottedBorderImageViewStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCameraTwo"
+                    style="@style/CameraBrowserTextViewStyle"
+                    android:text="@string/cameraBrowse"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtEnterOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/enter_otp"
+            android:textColor="@color/colorBlackText_CC000000"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvUserIdImagePicker" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/we_sent_on_your_mobile_number"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEnterOTP"
+            app:layout_constraintStart_toEndOf="@+id/txtEnterOTP"
+            app:layout_constraintTop_toTopOf="@+id/txtEnterOTP" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/firstPinView"
+            style="@style/PinViewStyle"
+            app:cursorColor="@color/colorRed"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="false"
+            app:itemCount="4"
+            app:itemHeight="@dimen/_38sdp"
+            app:itemRadius="4dp"
+            app:itemSpacing="@dimen/_16sdp"
+            app:itemWidth="@dimen/_46sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txtEnterOTP"
+            app:layout_constraintTop_toBottomOf="@+id/txtEnterOTP"
+            app:lineColor="@color/colorGrayText"
+            app:lineWidth="2dp"
+            app:viewType="rectangle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerifyNow"
+            style="@style/MaterialButtonStyle"
+            android:text="@string/verify_now"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstPinView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

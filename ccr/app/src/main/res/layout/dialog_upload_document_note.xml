@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSideTitle"
+                style="@style/CustomTextSmallGreyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/note"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCircleCheck1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/ic_check_circle"
+                app:layout_constraintStart_toStartOf="@+id/tvSideTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvSideTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMessage1"
+                style="@style/CustomTextMediumGreyStyle"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:singleLine="false"
+                android:text="@string/note_desc_1"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivCircleCheck1"
+                app:layout_constraintTop_toBottomOf="@+id/tvSideTitle" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCircleCheck2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/ic_check_circle"
+                android:padding="@dimen/_2sdp"
+                app:layout_constraintStart_toStartOf="@+id/ivCircleCheck1"
+                app:layout_constraintTop_toBottomOf="@+id/tvMessage1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMessage2"
+                style="@style/CustomTextMediumGreyStyle"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:singleLine="false"
+                android:text="@string/note_desc_2"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivCircleCheck2"
+                app:layout_constraintTop_toTopOf="@+id/ivCircleCheck2" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvMessage2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btCancel"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:background="@drawable/button_bg_dark"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintEnd_toStartOf="@+id/btTakePicture"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btTakePicture"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_a_picture"
+                    android:textSize="@dimen/_13ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btCancel"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="simpletooltip_max_width">170dp</dimen>
+    <dimen name="simpletooltip_overlay_offset">10dp</dimen>
+    <dimen name="simpletooltip_margin">2dp</dimen>
+    <dimen name="simpletooltip_padding">6dp</dimen>
+    <dimen name="simpletooltip_arrow_width">20dp</dimen>
+    <dimen name="simpletooltip_arrow_height">12dp</dimen>
+    <dimen name="simpletooltip_animation_padding">4dp</dimen>
+</resources>

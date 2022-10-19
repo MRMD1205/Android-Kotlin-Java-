@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "468757513331",
+    "firebase_url": "https://courtesycarsredhill-32dae.firebaseio.com",
+    "project_id": "courtesycarsredhill-32dae",
+    "storage_bucket": "courtesycarsredhill-32dae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468757513331:android:133d79f28af7f8303ed606",
+        "android_client_info": {
+          "package_name": "com.courtesycarsredhill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468757513331-12uqaodvviublrahgnfnkd0pjpvmpvsv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmBMV68QIYXoCGgcMrKJNLCbyx8iXG3M0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468757513331-12uqaodvviublrahgnfnkd0pjpvmpvsv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

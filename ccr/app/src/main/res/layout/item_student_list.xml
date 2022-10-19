@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="item"
+            type="com.courtesycarsredhill.model.TripdetailData.Dailyroutestudentmastermodellist" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/layoutImgText"
+            layout="@layout/layout_img_text"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:padding="0dp"
+            android:src="@drawable/ic_circle"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvParentName"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:id="@+id/cvMap"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:id="@+id/tvStudentNo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_8sdp"
+                android:gravity="center"
+                android:background="@drawable/shape_circle_blue"
+                app:layout_constraintTop_toTopOf="@+id/ivMap"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivMap"
+                app:layout_constraintBottom_toBottomOf="@+id/ivMap"
+                tools:text="1"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_go_to_map"
+                android:layout_margin="@dimen/_4sdp"
+                android:id="@+id/ivMap"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvParentName"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@{item.parentName1}"
+            android:textColor="@color/colorAccent"
+            tools:text="@string/parent_name"
+            app:layout_constraintEnd_toStartOf="@+id/cvMap"
+            app:layout_constraintStart_toEndOf="@+id/layoutImgText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAddress"
+            style="@style/CustomTextMediumGreyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@{item.parentsaddress1}"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toStartOf="@+id/cvMap"
+            app:layout_constraintStart_toStartOf="@+id/tvParentName"
+            app:layout_constraintTop_toBottomOf="@+id/tvParentName" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEquipment"
+            style="@style/CustomTextMediumGreyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:text="@string/str_euipment_colon"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:textColor="@color/grey_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvEquipmentValue"
+            app:layout_constraintTop_toBottomOf="@+id/layoutImgText"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEquipmentValue"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_1sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:maxLines="1"
+            app:layout_constraintStart_toEndOf="@+id/tvEquipment"
+            app:layout_constraintTop_toBottomOf="@+id/layoutImgText"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEstimatedTime"
+            style="@style/CustomTextMediumGreyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            tools:text="@string/str_euipment"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:textColor="@color/grey_text"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvEstimatedTimeValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEquipmentValue"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEstimatedTimeValue"
+            style="@style/CustomTextLargeGreyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_goneMarginTop="@dimen/_4sdp"
+            app:layout_constraintStart_toEndOf="@+id/tvEstimatedTime"
+            app:layout_constraintTop_toBottomOf="@+id/tvEquipmentValue"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvmErgencyContact"
+            style="@style/CustomTextSmallGreyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/shape_rounded_border_gray"
+            android:drawableRight="@drawable/ic_phone"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:text='@{String.format(@string/emergency_contect_+" " +item.emergencycontact)}'
+            android:visibility='@{item.emergencycontact.length()==0 ? View.GONE : View.VISIBLE}'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEstimatedTime"
+            tools:text="1234567898" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvParent1Contact"
+            style="@style/CustomTextSmallGreyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/shape_rounded_border_gray"
+            android:drawableRight="@drawable/ic_phone"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:text='@{String.format(@string/parent1 + " " + item.contactparent1)}'
+            android:visibility='@{item.contactparent1.length()==0 ? View.GONE : View.VISIBLE}'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvmErgencyContact"
+            tools:text="1234567898" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvParent2Contact"
+            style="@style/CustomTextSmallGreyStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/shape_rounded_border_gray"
+            android:drawableRight="@drawable/ic_phone"
+            android:drawablePadding="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:text='@{String.format(@string/parent2 + " " + item.contactparent2)}'
+            android:visibility='@{item.contactparent2.length()==0 ? View.GONE : View.VISIBLE}'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvParent1Contact"
+            tools:text="1234567898" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/grey_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvParent2Contact" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

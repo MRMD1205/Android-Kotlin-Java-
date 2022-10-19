@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".fragment.LoginFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDailyDeals"
+            style="@style/DailyDealsLogoTextStyle"
+            android:text="@string/daily_deals"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSlogan"
+            style="@style/SloganTextStyle"
+            android:text="@string/find_discover_buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDailyDeals" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivStoreImage"
+            style="@style/StoreImageStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSlogan" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/evPhone"
+            style="@style/LoginRegisterEditTextStyle"
+            android:drawableStart="@drawable/ic_baseline_phone"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivStoreImage" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/evPassword"
+            style="@style/LoginRegisterEditTextStyle"
+            android:drawableStart="@drawable/ic_baseline_lock"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evPhone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/forgot_password"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="@id/evPassword"
+            app:layout_constraintTop_toBottomOf="@+id/evPassword" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnSignIn"
+            style="@style/LoginRegisterButtonStyle"
+            android:src="@drawable/ic_login_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSignIn"
+            style="@style/LoginRegisterButtonTextStyle"
+            android:text="@string/sign_in"
+            app:layout_constraintBottom_toBottomOf="@id/btnSignIn"
+            app:layout_constraintEnd_toStartOf="@+id/btnSignIn"
+            app:layout_constraintTop_toTopOf="@id/btnSignIn" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCreateAccount"
+            style="@style/SignInSignUpTextViewStyle"
+            android:text="@string/don_t_have_an_account_signup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            style="@style/ProgressBar"
+            android:visibility="gone"
+            android:id="@+id/loginProgressBar"
+            app:layout_constraintBottom_toBottomOf="@id/btnSignIn"
+            app:layout_constraintEnd_toEndOf="@id/btnSignIn"
+            app:layout_constraintStart_toStartOf="@id/btnSignIn"
+            app:layout_constraintTop_toTopOf="@id/btnSignIn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

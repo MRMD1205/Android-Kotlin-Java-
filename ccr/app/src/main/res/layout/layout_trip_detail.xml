@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="item"
+            type="com.courtesycarsredhill.model.TripdetailData" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/layoutTripTiming"
+                layout="@layout/layout_trip_timimg" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btGiveTripFeedback"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/str_give_trip_feedback"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDestinationArea" />
+
+            <include
+                android:id="@+id/layout_comments"
+                layout="@layout/layout_comments_adhoc"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layout_driver"
+                layout="@layout/layout_short_detail_row" />
+
+            <include
+                android:id="@+id/layout_escort"
+                layout="@layout/layout_short_detail_row" />
+
+            <include
+                android:id="@+id/layout_school_history"
+                layout="@layout/layout_short_detail_row"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layout_school"
+                layout="@layout/layout_short_detail_school"
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/layout_children_list"
+                layout="@layout/layout_child_list" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

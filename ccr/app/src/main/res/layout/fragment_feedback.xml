@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btSubmit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar_accent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                    <include
+                        android:id="@+id/layoutFeedbackRating"
+                        layout="@layout/layout_feedback_ratings"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clFeedbackQuestions"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:padding="@dimen/_12sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/layoutFeedbackRating">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvQuestion1Title"
+                            style="@style/CustomTextSmallGreyStyle"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:text="@string/question_1"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etQuestion1Value"
+                            style="@style/editTextStyle"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:hint="@string/str_title"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvQuestion1Title" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvQuestion2Title"
+                            style="@style/CustomTextSmallGreyStyle"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:text="@string/question_2"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etQuestion1Value" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etQuestion2Value"
+                            style="@style/editTextStyle"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:hint="@string/str_title"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvQuestion2Title" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvQuestion3Title"
+                            style="@style/CustomTextSmallGreyStyle"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:text="@string/question_3"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etQuestion2Value" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etQuestion3Value"
+                            style="@style/editTextStyle"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:hint="@string/str_title"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvQuestion3Title" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvFeedbackTitle"
+                            style="@style/CustomTextSmallGreyStyle"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:text="@string/feedbacks"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etQuestion3Value" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etFeedbackValue"
+                            style="@style/editTextStyle"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_marginStart="@dimen/_1sdp"
+                            android:layout_marginEnd="@dimen/_1sdp"
+                            android:hint="@string/str_title"
+                            android:gravity="top"
+                            android:inputType="text"
+                            android:maxLines="6"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvFeedbackTitle" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btSubmit"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:background="@color/orange"
+            android:text="@string/submit"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

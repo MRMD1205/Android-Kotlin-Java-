@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_category"
+        android:enabled="true"
+        android:icon="@drawable/ic_category_selected"
+        android:title="category"/>
+    <item
+        android:id="@+id/menu_home"
+        android:enabled="false"
+        android:title="Home"/>
+    <item
+        android:id="@+id/menu_business"
+        android:enabled="true"
+        android:icon="@drawable/ic_business"
+        android:title="Home"/>
+</menu>
