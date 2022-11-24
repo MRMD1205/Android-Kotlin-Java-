@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceProfile"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/service_profile_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update or Delete Service Details"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <TextView
+        android:id="@+id/service_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service Name :"
+        android:textSize="10sp"
+        android:padding="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/service_profile_lable"/>
+
+    <TextView
+        android:id="@+id/key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Service Name"
+        android:textSize="30dp"
+        android:inputType="phone"
+        android:padding="15dp"
+        android:layout_below="@+id/service_name"
+        />
+
+    <EditText
+        android:id="@+id/update_delete_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/key"
+        />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_delete_price"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:text="Update"
+        android:textSize="20dp"
+        android:background="@drawable/buttons"
+        android:textColor="#ffffff"
+        android:onClick="btnUpdate_Click"/>
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_btn"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:text="Delete"
+        android:textSize="20dp"
+        android:background="@drawable/buttons"
+        android:textColor="#ffffff"
+        android:onClick="btnDelete_Click"/>
+
+</RelativeLayout>

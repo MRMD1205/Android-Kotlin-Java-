@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCustomer"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/edit_text_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Customer Details"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/edit_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        android:layout_below="@+id/edit_text_logo"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:padding="15dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_ph_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:layout_below="@+id/edit_full_name"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:inputType="phone"
+        android:padding="15dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_wp_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Whatsapp Number"
+        android:layout_below="@+id/edit_ph_no"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/edit_birth_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birth Date"
+        android:layout_below="@+id/edit_wp_no"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:focusableInTouchMode="false"
+        android:inputType="date"
+        />
+
+    <EditText
+        android:id="@+id/edit_aniversary_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Anniversary Date"
+        android:layout_below="@+id/edit_birth_date"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:focusableInTouchMode="false"
+        android:inputType="date"
+        />
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_below="@+id/edit_aniversary_date"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:padding="15dp"
+        />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_address"
+        android:layout_marginTop="50dp"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:background="@drawable/buttons"
+        android:textColor="@color/colorAccent"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:background="@drawable/buttons"
+    android:padding="10dp"
+    android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/service_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service :"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/view_service_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/service_lable"
+        android:layout_marginLeft="30dp"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/price_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price :"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/view_service_name"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/view_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_toRightOf="@+id/price_lable"
+        android:textSize="20sp"
+        android:layout_below="@id/view_service_name"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/check_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_details"
+        android:background="@drawable/cardview"
+        android:textColor="#778899"
+        android:textSize="8sp"
+        android:padding="5dp"
+        android:layout_marginLeft="145dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/view_price"
+        android:layout_marginTop="8dp"
+        />
+
+</RelativeLayout>
