@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/nav_enter_grades"
+        android:title="Enter Grades" />
+
+    <item
+        android:id="@+id/nav_enter_improvements"
+        android:title="Enter Improvement" />
+
+    <item
+        android:id="@+id/nav_search_grade"
+        android:title="Search Grade" />
+
+    <item
+        android:id="@+id/nav_list_students"
+        android:title="List Students" />
+
+</menu>
