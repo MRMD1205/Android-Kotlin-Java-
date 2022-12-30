@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MapsDemo</string>
+    <string name="add_poi">Add POI</string>
+    <string name="search_place">Search Place</string>
+    <string name="search_places">Search Places</string>
+    <string name="get_directions">Get Directions</string>
+</resources>
