@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.tridhya.videoplay.ui.view.fragments.home.FragmentHome"
+        android:label="FragmentHome"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/fragmentfavourites"
+        android:name="com.tridhya.videoplay.ui.view.fragments.favourites.FavouritesFragment"
+        android:label="FavouritesFragment"
+        tools:layout="@layout/fragment_favourites" />
+
+    <fragment
+        android:id="@+id/fragmentCreateMedia"
+        android:name="com.tridhya.videoplay.ui.view.fragments.video.AddVideoFragment"
+        android:label="AddVideoFragment"
+        tools:layout="@layout/fragment_add_video">
+
+        <action
+            android:id="@+id/toGalleryMedia"
+            app:destination="@+id/fragmentGalleryMedia" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentGalleryMedia"
+        android:name="com.tridhya.videoplay.ui.view.fragments.video.GalleryVideoFragment"
+        android:label="GalleryVideoFragment"
+        tools:layout="@layout/fragment_gallery_video" />
+
+    <fragment
+        android:id="@+id/fragmentMessages"
+        android:name="com.tridhya.videoplay.ui.view.fragments.messages.MessagesFragment"
+        android:label="MessagesFragment"
+        tools:layout="@layout/fragment_messages" />
+
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.tridhya.videoplay.ui.view.fragments.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="selectedPosition"
+            type="Integer" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/navHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph_main" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/navHostFragment">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/transparent"
+                app:contentInsetStart="0dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:alpha="0.5"
+                    android:background="@drawable/bg_bottom_bar"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/llHome"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/selector_bottom_nav_ic"
+                            android:padding="10dp"
+                            android:src="@drawable/selector_home" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/llHeart"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?selectableItemBackgroundBorderless">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="?selectableItemBackgroundBorderless">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivHeart"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:background="@drawable/selector_bottom_nav_ic"
+                                android:padding="12dp"
+                                android:src="@drawable/selector_heart"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <!--                            <androidx.appcompat.widget.AppCompatTextView-->
+                            <!--                                android:id="@+id/tvMessageCount"-->
+                            <!--                                tools:text="9"-->
+                            <!--                                android:layout_width="11dp"-->
+                            <!--                                android:layout_height="11dp"-->
+                            <!--                                android:layout_marginEnd="16dp"-->
+                            <!--                                android:layout_marginBottom="-16dp"-->
+                            <!--                                android:background="@drawable/selector_bottom_nav_badge_ic"-->
+                            <!--                                android:fontFamily="@font/poppins_medium"-->
+                            <!--                                android:includeFontPadding="false"-->
+                            <!--                                android:textAlignment="center"-->
+                            <!--                                android:textColor="@drawable/selector_color_white_pale_purple"-->
+                            <!--                                android:textSize="8sp"-->
+                            <!--                                android:visibility="gone"-->
+                            <!--                                app:layout_constraintBottom_toTopOf="@id/ivChat"-->
+                            <!--                                app:layout_constraintEnd_toEndOf="parent" />-->
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/llCreate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?selectableItemBackgroundBorderless">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="?selectableItemBackgroundBorderless">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivCreate"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:background="@drawable/selector_bottom_nav_ic"
+                                android:padding="6dp"
+                                android:src="@drawable/selector_create"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <!--                            <androidx.appcompat.widget.AppCompatTextView-->
+                            <!--                                android:id="@+id/tvMessageCount"-->
+                            <!--                                tools:text="9"-->
+                            <!--                                android:layout_width="11dp"-->
+                            <!--                                android:layout_height="11dp"-->
+                            <!--                                android:layout_marginEnd="16dp"-->
+                            <!--                                android:layout_marginBottom="-16dp"-->
+                            <!--                                android:background="@drawable/selector_bottom_nav_badge_ic"-->
+                            <!--                                android:fontFamily="@font/poppins_medium"-->
+                            <!--                                android:includeFontPadding="false"-->
+                            <!--                                android:textAlignment="center"-->
+                            <!--                                android:textColor="@drawable/selector_color_white_pale_purple"-->
+                            <!--                                android:textSize="8sp"-->
+                            <!--                                android:visibility="gone"-->
+                            <!--                                app:layout_constraintBottom_toTopOf="@id/ivChat"-->
+                            <!--                                app:layout_constraintEnd_toEndOf="parent" />-->
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/llMessage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:paddingVertical="8dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/selector_bottom_nav_ic"
+                            android:padding="8dp"
+                            android:src="@drawable/selector_message" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/llProfile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/selector_bottom_nav_ic"
+                            android:padding="10dp"
+                            android:src="@drawable/selector_profile" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            android:id="@+id/llMoreOptions"
+            android:alpha="0.5"
+            android:background="@drawable/ic_round_theme"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMoreOptions"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_more_options" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            android:id="@+id/llSearch"
+            android:alpha="0.5"
+            android:background="@drawable/ic_round_theme"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_search" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

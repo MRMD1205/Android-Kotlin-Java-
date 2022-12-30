@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <com.tridhya.videoplay.widgets.PortraitFrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll3PartLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cvFrame1"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp">
+
+                <com.tridhya.videoplay.widgets.PortraitFrameLayout
+                    android:id="@+id/frame1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp">
+
+                <com.tridhya.videoplay.widgets.PortraitFrameLayout
+                    android:id="@+id/frame2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp">
+
+                <com.tridhya.videoplay.widgets.PortraitFrameLayout
+                    android:id="@+id/frame3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSwitchCamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_camera_switch"
+            android:tint="@color/theme_color"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivFlash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_flash_on"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivSwitchCamera" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivGallery"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_gallery"
+            android:tint="@color/theme_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivFlash" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRecord"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_recording_off"
+            app:layout_constraintBottom_toTopOf="@id/rvFilterList"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivFilter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_filter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivScheduleLength"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_schedule"
+            android:tint="@color/theme_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivFilter" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivWatermark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_app_disable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivScheduleLength" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLayout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_layouts"
+            android:tint="@color/theme_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivWatermark" />
+
+        <Chronometer
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableStart="@drawable/ic_round"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/color_red"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFilterList"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#50273B7A"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
