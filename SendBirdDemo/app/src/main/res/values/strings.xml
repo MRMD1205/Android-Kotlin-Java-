@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Live Stream</string>
+    <string name="send_bird_app_id">47D0B949-09A3-41D5-A7A5-CB02A571AD9A</string>
+    <string name="send_bird_access_token">8d0d8960e08b6d8ec744833daa83372b6d9b1959</string>
+<!--    <string name="send_bird_user_id">123456</string>-->
+    <string name="send_bird_user_id">sendbird_desk_agent_id_630c28ec-f926-48ff-a4d7-68ca8c99d06d</string>
+    <string name="send_bird_user_nickname">Mayank Dama</string>
+</resources>
