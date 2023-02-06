@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="_5dp">12.80dp</dimen>
-    <dimen name="_10dp">25.60dp</dimen>
-    <dimen name="_30dp">76.80dp</dimen>
-    <dimen name="_100dp">256.00dp</dimen>
-</resources>

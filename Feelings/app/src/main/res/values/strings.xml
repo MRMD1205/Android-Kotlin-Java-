@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Feelings</string>
-    <string name="full_name">enter full name</string>
-    <string name="name">Full name : </string>
-    <string name="ph_no">Phone No : </string>
-    <string name="check_details">Check Details</string>
-    <string name="bill"><center>Billing Details</center></string>
-</resources>
